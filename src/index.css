@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,195 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease;
+  background-color: var(--bg) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* General */
+
+hr.p-divider {
+  transition: background-color 0.5s ease;
+  background-color: var(--p-divider);
+}
+
+/* NavBar */
+
+/* Logo Navbar position left */
+svg#Layer_1 {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.MuiAppBar-colorPrimary.nav-bg {
+  transition: background-color 0.5s ease;
+  background-color: var(--nav-bg);
+}
+
+a.nav-items {
+  transition: color 0.5s ease;
+  color: var(--nav-items);
+  text-decoration: none;
+}
+
+button.nav-btn {
+  color: var(--nav-btn);
+}
+
+a.nav-side-item {
+  color: #202020;
+  text-decoration: none;
+}
+
+/* Dashboard */
+
+p.dash-title {
+  transition: color 0.5s ease;
+  color: var(--dash-title);
+}
+
+.dash-name {
+  transition: color 0.5s ease;
+  color: var(--dash-name);
+}
+
+.dash-skill {
+  transition: color 0.5s ease;
+  color: var(--dash-skill);
+}
+
+svg.dash-icon {
+  transition: fill 0.5s ease;
+  fill: var(--dash-icon);
+  font-size: 2.5rem;
+}
+
+svg.dash-icon:hover {
+  transition: fill 0.3s ease;
+  fill: var(--dash-icon-hover);
+}
+
+.dash-container {
+  min-height: 80vh;
+}
+
+@media (max-width: 20rem) {
+  .dash-container {
+    min-height: 100vh;
+  }
+}
+
+/* About me */
+
+.about-title {
+  transition: color 0.5s ease;
+  color: var(--about-title);
+}
+
+.about-code {
+  transition: color 0.5s ease;
+  color: var(--about-code);
+}
+
+.about-text {
+  transition: color 0.5s ease;
+  color: var(--about-text);
+}
+
+/* Projects */
+
+.projects-title {
+  transition: color 0.5s ease;
+  color: var(--projects-title);
+}
+
+/* Project */
+.project-title {
+  transition: color 0.5s ease;
+  color: var(--project-title);
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-description {
+  transition: color 0.5s ease;
+  color: var(--project-description);
+}
+
+.MuiCard-root.project-content {
+  transition: background-color 0.5s ease; 
+  background-color: var(--project-content);
+}
+
+.project-option {
+  transition: color 0.5s ease;
+  color: var(--project-option);
+}
+
+hr.project-divider {
+  transition: background-color 0.5s ease;
+  background-color: var(--project-divider);
+}
+
+/* Project Details */
+.details-title {
+  transition: color 0.5s ease;
+  color: var(--details-title);
+}
+
+.details-dev {
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+  background-color:var(--details-dev-bg);
+  color: var(--details-dev-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.details-text {
+  transition: color 0.5s ease;
+  color: var(--details-text);
+}
+
+.details-link {
+  transition: color 0.5s ease;
+  color: var(--details-link);
+}
+
+/* Resume */
+
+.resume-title {
+  transition: color 0.5s ease;
+  color: var(--resume-title);
+}
+
+svg.resume-icon {
+  transition: fill 0.5s ease;
+  fill: var(--resume-icon);
+}
+
+svg.resume-icon:hover {
+  transition: fill 0.3s ease;
+  fill: var(--resume-icon-hover);
+}
+
+.resume-education {
+  transition: color 0.5s ease;
+  color: var(--resume-education);
+}
+
+.resume-college {
+  transition: color 0.5s ease;
+  color: var(--resume-college);
+}
+
+.resume-college-time {
+  transition: color 0.5s ease;
+  color: var(--resume-college-time);
 }
