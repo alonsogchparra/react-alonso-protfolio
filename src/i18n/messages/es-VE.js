@@ -1,0 +1,66 @@
+import { LOCALES } from '../locales';
+
+export default {
+  [LOCALES.SPANISH]: {
+    // Dashboard
+    hi: '¡Hola! ¡Estoy en busqueda de nuevas oportunidades!',
+    profession: 'Desarrollador de Software y más.',
+    // About Me
+    aboutMe: 'Sobre Mi',
+    aboutSub: 'Desarrollador de Software • Illustrador • Desarrollador de Juegos • y más',
+    aboutLineOne: "¡Hola a todos! Mi nombre es ",
+    name: 'Alonso Parra',
+    aboutLineOneNext: "Soy Ingeniero de Sistemas, disfruto crear proyectos y aprender nuevas cosas.",
+    aboutLineTwo: "Tuve el honor de recibir mi título en la",
+    college: "Universidad de los Andes",
+    aboutLineTwoNext: "Estando allí, pude observar muchas cosas que me ayudaron sobre que rutas puedo tomar mezclando desarrollo, diseño y otras cosas que podrían ser aporte adicional en cualquier proyecto.",
+    aboutLineThree: "Mis intereses técnicos son",
+    frontend: "Desarrollo Frontend",
+    mobile: "Desarrollo Móvil",
+    illustration: "Ilustración",
+    and: "y",
+    game: "Desarrolo de Juegos",
+    aboutLineThreeNext: "La mayor experencia con",
+    javascript: "Javascript",
+    aboutLineThreeNextOne: "es desarrollando con",
+    react: 'React.js',
+    with: 'con',
+    csharp: 'C#',
+    developing: "desarrollando con",
+    unity: "Unity",
+    for: "Para",
+    illustrations: "ilustraciones",
+    work: "trabajo con",
+    ai: "Adobe Illustrator",
+    aboutLineThreeNextTwo: "Los próximos pasos que quiero seguir es aprender sobre",
+    native: "React Native",
+    try: "para el desarrollo móvil y darle una oportunidad con",
+    node: "Node.js",
+    whyNot: "(Por qué no xD)",
+    live: "Actualmente vivo en",
+    vzla: "Venezuela",
+    aboutLineFour: "En mi tiempo libre, me gusta tocar guitarra, mirar series y peliculas, jugar videojuegos (Los viejos con emuladores, en el futuro espero poder jugar los juegos más recientes).",
+    aboutLineFive: "Sientanse libre de chequear mis",
+    projects: "proyectos",
+    aboutLineFiveOne: "que he disfrutado construirlos y aprender mucho de ellos en el camino.",
+    aboutLineSix: "¡En este momento estoy buscando nuevas oportunidades!",
+    aboutLineSeven: "Puedes consultar más información sobre mí",
+    here: "aquí",
+    // Projects
+    projects: "Proyectos",
+    // Navigation
+    about: 'Sobre Mi',
+    project: 'Proyectos',
+    resume: 'Resumen',
+    changeTheme: 'Cambiar Tema',
+    // Resume
+    education: 'Educación',
+    january: 'Enero',
+    december: 'Diciembre',
+    experience: 'Experiencia',
+    devFrontend: 'Desarrollador Frontend',
+    devGame: 'Desarrollador Juego',
+    illustrator: 'Ilustrador',
+    
+  }
+}
