@@ -47,8 +47,9 @@ export default {
     aboutLineSeven: "You can check more info about me",
     here: "here",
     // Projects
-    projects: "Projects",
+    projectTitle: "Projects",
     // Navigation
+    home: 'Home',
     about: 'About',
     project: 'Projects',
     resume: 'Resume',

@@ -47,8 +47,9 @@ export default {
     aboutLineSeven: "Puedes consultar más información sobre mí",
     here: "aquí",
     // Projects
-    projects: "Proyectos",
+    projectTitle: "Proyectos",
     // Navigation
+    home: 'Inicio',
     about: 'Sobre Mi',
     project: 'Proyectos',
     resume: 'Resumen',
