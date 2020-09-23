@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Navigation } from './components';
+import { Navigation, Dashboard } from './components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { I18nProvider, LOCALES } from './i18n';
 
@@ -17,12 +17,15 @@ function App() {
     } else {
       setLocale(LOCALES.SPANISH);
     }
-  })
+  },[isEnglish])
 
   return (
     <I18nProvider locale={locale}>
      <BrowserRouter basename="/">
       <Navigation />
+      <Switch>
+        <Route path="/" exact component={Dashboard} />
+      </Switch>
      </BrowserRouter>
     </I18nProvider>
   );
