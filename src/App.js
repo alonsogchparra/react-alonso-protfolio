@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Navigation, Dashboard } from './components';
+import { Navigation, Dashboard, About } from './components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { I18nProvider, LOCALES } from './i18n';
 
@@ -25,6 +25,7 @@ function App() {
       <Navigation />
       <Switch>
         <Route path="/" exact component={Dashboard} />
+        <Route path="/about" component={About} />
       </Switch>
      </BrowserRouter>
     </I18nProvider>
