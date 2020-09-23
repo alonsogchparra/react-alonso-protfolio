@@ -12,11 +12,10 @@ import {
   ListItemText,
   Toolbar,
   Button,
-  Switch,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import { makeStyles, useTheme, withStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import * as actions from "../../store/actions";
 import translate from "../../i18n/translate";
 import clsx from "clsx";
