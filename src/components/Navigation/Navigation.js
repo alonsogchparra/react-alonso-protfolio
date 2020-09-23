@@ -107,26 +107,26 @@ const Navigation = () => {
   const drawer = (
     <div>
       <List>
-        <ListItem button>
-          <Link to="/" className="nav-side-item">
+        <Link to="/" className="nav-side-item">
+          <ListItem button>
             <ListItemText primary={translate("home")} />
-          </Link>
-        </ListItem>
-        <ListItem button>
-          <Link to="/about" className="nav-side-item">
+          </ListItem>
+        </Link>
+        <Link to="/about" className="nav-side-item">
+          <ListItem button>
             <ListItemText primary={translate("about")} />
-          </Link>
-        </ListItem>
-        <ListItem button>
-          <Link to="/projects" className="nav-side-item">
+          </ListItem>
+        </Link>
+        <Link to="/projects" className="nav-side-item">
+          <ListItem button>
             <ListItemText primary={translate("project")} />
-          </Link>
-        </ListItem>
-        <ListItem button>
-          <Link to="/resume" className="nav-side-item">
+          </ListItem>
+        </Link>
+        <Link to="/resume" className="nav-side-item">
+          <ListItem button>
             <ListItemText primary={translate("resume")} />
-          </Link>
-        </ListItem>
+          </ListItem>
+        </Link>
         <ListItem button>
           <ListItemText
             primary={translate("changeTheme")}
@@ -167,21 +167,15 @@ const Navigation = () => {
             </div>
 
             <div className={classes.buttons}>
-              <Button color="inherit">
-                <Link to="/about" className="nav-items">
-                  {translate("about")}
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/projects" className="nav-items">
-                  {translate("project")}
-                </Link>
-              </Button>
-              <Button color="inherit">
-                <Link to="/resume" className="nav-items">
-                  {translate("resume")}
-                </Link>
-              </Button>
+              <Link to="/about" className="nav-items">
+                <Button color="inherit">{translate("about")}</Button>
+              </Link>
+              <Link to="/projects" className="nav-items">
+                <Button color="inherit">{translate("project")}</Button>
+              </Link>
+              <Link to="/resume" className="nav-items">
+                <Button color="inherit">{translate("resume")}</Button>
+              </Link>
               <Button
                 variant="outlined"
                 color="inherit"
