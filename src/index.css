@@ -135,7 +135,7 @@ svg.dash-icon:hover {
   background-color: var(--project-content);
 }
 
-.project-option {
+.project-option, .MuiButton-root.project-option {
   transition: color 0.5s ease;
   color: var(--project-option);
 }
