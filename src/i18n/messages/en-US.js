@@ -48,6 +48,7 @@ export default {
     here: "here",
     // Projects
     projectTitle: "Projects",
+    illustrationTitle: "Illustrations",
     // Navigation
     home: 'Home',
     about: 'About',
