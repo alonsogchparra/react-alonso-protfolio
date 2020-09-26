@@ -13,6 +13,7 @@ import {
   MuiThemeProvider,
 } from "@material-ui/core/styles";
 import Project from "./Project";
+import Illustrations from './Illustrations';
 import translate from "../../i18n/translate";
 import { projects } from "../../content/projects";
 import { withRouter } from 'react-router-dom';
@@ -67,6 +68,27 @@ const Projects = () => {
                 );
               })}
             </Grid>
+
+            <Box width="100%" mb={2}>
+              <Typography
+                variant="h3"
+                align="center"
+                className="projects-title"
+              >
+                {translate("illustrationTitle")}
+              </Typography>
+              <Divider variant="fullWidth" className="p-divider" />
+            </Box>
+
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              <Illustrations />
+            </Grid>
+
           </Grid>
         </Container>
       </MuiThemeProvider>
