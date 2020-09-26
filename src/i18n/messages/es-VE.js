@@ -48,6 +48,7 @@ export default {
     here: "aquí",
     // Projects
     projectTitle: "Proyectos",
+    illustrationTitle: "Ilustraciones",
     // Navigation
     home: 'Inicio',
     about: 'Sobre Mi',
