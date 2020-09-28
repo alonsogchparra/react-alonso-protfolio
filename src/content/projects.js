@@ -5,6 +5,7 @@ import counter from "../media/images/projects/counter.png";
 import ppw from "../media/images/projects/ppw_card.png";
 import oki_card from "../media/images/projects/oki_card.png";
 import vg from "../media/images/projects/vg_4_kids_card.png";
+import entregrados from '../media/images/projects/entregrados.png';
 
 import oki_detail from "../media/images/projects/oki.png";
 import vg_detail from "../media/images/projects/vg_4_kids.png";
@@ -30,6 +31,27 @@ export const projects = [
     projectLink: "guitareact",
     githubLink: "https://github.com/aliens9889/guitareact",
     video: "https://www.youtube.com/embed/I370AZCxWgk",
+    id: 8,
+  },
+  {
+    name: "Entre Grados",
+    description_en:
+      "This is the hangman but with the web show style of EntreGrados from Youtube. You can add a word or a phrase, making the game a challenge to find out what's the clue, and if you loose, you have to drink (If you are 18+ of course). And if you're drinking, don't drive please! The entire idea is having fun, but taking care each other. It's a classic game renewed to olders",
+    description_es:
+      "Es el juego del ahorcado con el toque del web show EntreGrados de Youtube. La particularidad de este juego es que ademas de palabras puedes agregar frases, haciendo que el juego tenga un reto mayor, y si pierdes, bebes (Claro si eres mayor de edad). Y si bebes no conduzcas, Por favor! La idea es que tu y los tuyos pasen un buen rato. Un juego clasico renovado para mayores.",
+    image: entregrados,
+    imageDetail: entregrados,
+    developed: [
+      "React.js",
+      "Redux",
+      "Bootstrap",
+      "React-Router-Dom",
+      "Adobe Illustrator"
+    ],
+    link: "https://entre-grados-game.web.app/",
+    projectLink: "entre_grados",
+    githubLink: "https://github.com/aliens9889/react-entre-grados",
+    video: "https://www.youtube.com/embed/xvWx7gs6OEQ",
     id: 7,
   },
   {
