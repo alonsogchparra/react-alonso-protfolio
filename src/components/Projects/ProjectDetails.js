@@ -125,6 +125,7 @@ const ProjectDetails = ({ location }) => {
             {checkVideo(video, image)}
 
             <Box my={2}>
+              <Divider variant="fullWidth" className="p-divider" style={{ marginTop: '10px', marginBottom: '15px' }} />
               <Typography align="center" paragraph className="details-text">
                 {isEnglish ? descriptionEn : descriptionEs}
               </Typography>
