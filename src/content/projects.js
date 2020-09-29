@@ -6,6 +6,7 @@ import ppw from "../media/images/projects/ppw_card.png";
 import oki_card from "../media/images/projects/oki_card.png";
 import vg from "../media/images/projects/vg_4_kids_card.png";
 import entregrados from '../media/images/projects/entregrados.png';
+import crema from '../media/images/projects/crema.png';
 
 import oki_detail from "../media/images/projects/oki.png";
 import vg_detail from "../media/images/projects/vg_4_kids.png";
@@ -31,7 +32,7 @@ export const projects = [
     projectLink: "guitareact",
     githubLink: "https://github.com/aliens9889/guitareact",
     video: "https://www.youtube.com/embed/I370AZCxWgk",
-    id: 8,
+    id: 9,
   },
   {
     name: "Entre Grados",
@@ -52,6 +53,26 @@ export const projects = [
     projectLink: "entre_grados",
     githubLink: "https://github.com/aliens9889/react-entre-grados",
     video: "https://www.youtube.com/embed/xvWx7gs6OEQ",
+    id: 8,
+  },
+  {
+    name: "Crema La Baragüeña",
+    description_en:
+      "It is a commercial video that I built for my uncle showing the quality of his product. The illustrations for the commercial I used Adobe Illustrator, the animations I used Adobe After Effects, the voice over I used my own voice and put all these elements together with Camtasia. If you have the opportunity, give a shot with La Baragüeña products, you will get amazed!",
+    description_es:
+      "Es un video comercial que le realice a un tio mostrando la calidad de su producto. Las ilustraciones del video los hice con Adobe Illustrator, las animaciones use Adobe After Effects, para el voice over use mi voz y la union de todos los elementos para crear el video use Camtasia. Si tienen la oportunidad de probar los productos de La Baragüeña, se van a dar un banquete.",
+    image: crema,
+    imageDetail: crema,
+    developed: [
+      "Camtasia",
+      "Voice Over",
+      "Adobe After Effects",
+      "Adobe Illustrator",
+    ],
+    link: null,
+    projectLink: "crema_la_baraguena",
+    githubLink: null,
+    video: "https://www.youtube.com/embed/tBfAzttYxDM",
     id: 7,
   },
   {
