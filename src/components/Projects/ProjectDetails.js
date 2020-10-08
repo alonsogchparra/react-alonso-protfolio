@@ -126,7 +126,7 @@ const ProjectDetails = ({ location }) => {
 
             <Box my={2}>
               <Divider variant="fullWidth" className="p-divider" style={{ marginTop: '10px', marginBottom: '15px' }} />
-              <Typography align="center" paragraph className="details-text">
+              <Typography align="left" paragraph className="details-text">
                 {isEnglish ? descriptionEn : descriptionEs}
               </Typography>
               <Divider variant="fullWidth" className="p-divider" />
