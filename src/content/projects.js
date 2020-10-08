@@ -7,12 +7,36 @@ import oki_card from "../media/images/projects/oki_card.png";
 import vg from "../media/images/projects/vg_4_kids_card.png";
 import entregrados from '../media/images/projects/entregrados.png';
 import crema from '../media/images/projects/crema.png';
+import myWebsite from '../media/images/projects/my_website.png';
 
 import oki_detail from "../media/images/projects/oki.png";
 import vg_detail from "../media/images/projects/vg_4_kids.png";
 import ppw_detail from "../media/images/projects/ppw.png";
 
+import translate from '../i18n/translate';
+
 export const projects = [
+  {
+    name: translate("myWebsite"),
+    description_en:
+      "I developed my website with React.js and the main purpose of doing this is so that everyone can see that the projects I have done, either programming and illustration, I also hope to show the projects where I have been able to collaborate. In addition to showing the information of the projects, I will share the link so that you can see the project live and the repository so that you can review how it was developed. I hope to keep updating my website with more projects and have the opportunity to provide support in other projects that allow me to meet more people and acquire new skills. I also see it as a different way to show that I am looking for new opportunities.",
+    description_es:
+      "Mi sitio web lo desarrollé con React.js y el principal proposito de para realizar esto, es para que todos vean que los proyectos que he realizado, bien sea de programación e ilustración, tambien espero mostrar los proyectos en donde he podido colaborar. Además de mostrar la información de los proyectos, compartiré el link para que puedan ver el proyecto en vivo y el repositorio para que puedan revisar como fue desarrollado. Espero seguir actualizando mi sitio web con más proyectos y tener la oportunidad de brindar apoyo en otros proyectos que me permitan conocer más personas y adquirir nuevas habilidades. También lo veo como una forma distinta para mostrar que estoy buscando nuevas oportunidades.",
+    image: myWebsite,
+    imageDetail: myWebsite,
+    developed: [
+      "React.js",
+      "Redux",
+      "Redux Thunk",
+      "Material UI",
+      "i18next",
+    ],
+    link: "https://alonsogchparra.web.app/",
+    projectLink: "my_website",
+    githubLink: "https://github.com/aliens9889/react-alonso-protfolio",
+    video: "https://www.youtube.com/embed/fdwEjqPFZks",
+    id: 10,
+  },
   {
     name: "GuitaReact",
     description_en:
@@ -106,7 +130,7 @@ export const projects = [
     id: 5,
   },
   {
-    name: "React Counter",
+    name: translate('reactCounter'),
     description_en:
       "This project or These projects despite the final result is the same the way to get the result is different. What I wanted with this project is to show how you can build a project with others UI frameworks or with other way to get the values. These projects will show you that. The counter will increment + 1, decrement -1, add + 10 and subtract - 15. If you are starting programming and you have knowledge of HTML, CSS and Javascript. The next step is this and the plus of learning you can do it with Redux, that way you will be more secure about build a big project or be part of one. Check the repository or CodeSandBox, I hope this helps you.",
     description_es:
