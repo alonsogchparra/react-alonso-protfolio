@@ -49,6 +49,9 @@ export default {
     // Projects
     projectTitle: "Projects",
     illustrationTitle: "Illustrations",
+    // Project
+    myWebsite: "My Website",
+    reactCounter: "React Counter",
     // Navigation
     home: 'Home',
     about: 'About',
