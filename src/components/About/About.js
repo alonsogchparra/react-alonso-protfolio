@@ -51,13 +51,14 @@ const About = () => {
                 {translate("aboutSub")}
               </Typography>
             </Box>
-            <Typography align="center" className="about-text">
-              {translate("aboutLineOne")} <strong>{translate("name")}</strong>.{" "}
-              {translate("aboutLineOneNext")}
-            </Typography>
-            <Box my={2}>
+
+            <Box paddingX={5}>
+              <Typography align="left" className="about-text" paragraph>
+                {translate("aboutLineOne")} <strong>{translate("name")}</strong>.{" "}
+                {translate("aboutLineOneNext")}
+              </Typography>
               <Typography
-                align="center"
+                align="left"
                 paragraph="true"
                 className="about-text"
               >
@@ -66,7 +67,7 @@ const About = () => {
                 {translate("aboutLineTwoNext")}
               </Typography>
               <Typography
-                align="center"
+                align="left"
                 paragraph="true"
                 className="about-text"
               >
@@ -109,14 +110,14 @@ const About = () => {
                 <strong>Venezuela</strong>.
               </Typography>
               <Typography
-                align="center"
+                align="left"
                 paragraph="true"
                 className="about-text"
               >
                 {translate("aboutLineFour")}
               </Typography>
               <Typography
-                align="center"
+                align="left"
                 paragraph="true"
                 className="about-text"
               >
