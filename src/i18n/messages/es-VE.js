@@ -49,6 +49,7 @@ export default {
     // Projects
     projectTitle: "Proyectos",
     illustrationTitle: "Ilustraciones",
+    pageNumber: "Pagina Nº:",
     // Project
     myWebsite: "Mi sitio Web",
     reactCounter: "Contador React",

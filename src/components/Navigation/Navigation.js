@@ -168,13 +168,13 @@ const Navigation = () => {
 
             <div className={classes.buttons}>
               <Link to="/about" className="nav-items">
-                <Button color="inherit">{translate("about")}</Button>
+                <Button className="nb-items" color="inherit">{translate("about")}</Button>
               </Link>
               <Link to="/projects" className="nav-items">
-                <Button color="inherit">{translate("project")}</Button>
+                <Button className="nb-items" color="inherit">{translate("project")}</Button>
               </Link>
               <Link to="/resume" className="nav-items">
-                <Button color="inherit">{translate("resume")}</Button>
+                <Button className="nb-items" color="inherit">{translate("resume")}</Button>
               </Link>
               <Button
                 variant="outlined"
