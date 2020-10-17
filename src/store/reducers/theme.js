@@ -26,6 +26,8 @@ const initState = {
       "about-text": "#202020",
       // Projects
       "projects-title": "#202020",
+      "projects-page-item": "#174e98",
+      "projects-page-color": "#202020",
       // Project
       "project-title": "#ffffff",
       "project-description": "#ffffff",
@@ -66,6 +68,8 @@ const initState = {
       "about-text": "#202020",
       // Projects
       "projects-title": "#202020",
+      "projects-page-item": "#066839",
+      "projects-page-color": "#202020",
       // Project
       "project-title": "#ffffff",
       "project-description": "#ffffff",
@@ -106,6 +110,8 @@ const initState = {
       "about-text": "#fafafa",
       // Projects
       "projects-title": "#fafafa",
+      "projects-page-item": "#a10000",
+      "projects-page-color": "#fafafa",
       // Project
       "project-title": "#fafafa",
       "project-description": "#fafafa",
@@ -146,6 +152,8 @@ const initState = {
       "about-text": "#fafafa",
       // Projects
       "projects-title": "#fafafa",
+      "projects-page-item": "#ff841f",
+      "projects-page-color": "#fafafa",
       // Project
       "project-title": "#202020",
       "project-description": "#202020",
@@ -186,6 +194,8 @@ const initState = {
       "about-text": "#202020",
       // Projects
       "projects-title": "#202020",
+      "projects-page-item": "#193b5e",
+      "projects-page-color": "#202020",
       // Project
       "project-title": "#193b5e",
       "project-description": "#202020",
