@@ -77,7 +77,7 @@ const About = () => {
                 <strong>{translate("game")}</strong>.
                 {translate("aboutLineThreeNext")}{" "}
                 <strong>
-                  <code>{translate("javascript")}</code>
+                <code className="about-code">{translate("javascript")}</code>
                 </strong>{" "}
                 {translate("aboutLineThreeNextOne")}{" "}
                 <strong>
