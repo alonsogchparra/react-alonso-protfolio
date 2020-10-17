@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Grid,
@@ -13,15 +13,27 @@ import {
   MuiThemeProvider,
 } from "@material-ui/core/styles";
 import Project from "./Project";
-import Illustrations from './Illustrations';
+import Illustrations from "./Illustrations";
 import translate from "../../i18n/translate";
 import { projects } from "../../content/projects";
-import { withRouter } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
+import Pagination from "./Pagination";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const Projects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [projectPerPage] = useState(6);
+
+  // Get Current Projects
+  const indexOfLastPost = currentPage * projectPerPage;
+  const indexofFirstPost = indexOfLastPost - projectPerPage;
+  const currentProjects = projects.slice(indexofFirstPost, indexOfLastPost);
+
+  // Change Page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div style={{ marginTop: "30px" }}>
       <MuiThemeProvider theme={theme}>
@@ -50,7 +62,7 @@ const Projects = () => {
               justify="center"
               alignItems="center"
             >
-              {projects.map((project) => {
+              {currentProjects.map((project) => {
                 return (
                   <Project
                     key={project.id}
@@ -69,7 +81,44 @@ const Projects = () => {
               })}
             </Grid>
 
-            <Box width="100%" mb={2}>
+            <Grid
+              container
+              direction="column"
+              justify="center"
+              alignItems="center"
+            >
+              <Grid>
+                <Box mb={1}>
+                  <Typography
+                    variant="h4"
+                    align="right"
+                    className="projects-title"
+                  >
+                    {translate("pageNumber")}
+                  </Typography>
+                </Box>
+              </Grid>
+
+              <Box
+                mb={5}
+                width="100%"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Divider variant="fullWidth" className="p-divider" />
+                <Grid container justify="center" alignItems="center">
+                  <Pagination
+                    currentPage={currentPage}
+                    projectPerPage={projectPerPage}
+                    totalProjects={projects.length}
+                    paginate={paginate}
+                  />
+                </Grid>
+                <Divider variant="fullWidth" className="p-divider" />
+              </Box>
+            </Grid>
+
+            <Box width="100%" mt={2} mb={2}>
               <Typography
                 variant="h3"
                 align="center"
@@ -88,7 +137,6 @@ const Projects = () => {
             >
               <Illustrations />
             </Grid>
-
           </Grid>
         </Container>
       </MuiThemeProvider>
