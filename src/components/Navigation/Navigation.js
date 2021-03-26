@@ -130,6 +130,7 @@ const Navigation = () => {
         </Link>
         <ListItem button>
           <ListItemText
+            className="animate__animated animate__pulse animate__slow animate__infinite"
             primary={translate("chooseYourVillage")}
             onClick={() => effectsHandler()}
           />
