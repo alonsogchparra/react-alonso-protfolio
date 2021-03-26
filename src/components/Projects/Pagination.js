@@ -12,8 +12,6 @@ const Pagination = ({
     pageNumbers.push(i);
   }
 
-  console.log(pageNumbers);
-
   return (
     <nav>
       <ul className="pagination pagination-lg projects-page">
