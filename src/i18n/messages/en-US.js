@@ -5,6 +5,7 @@ export default {
     // Dashboard
     hi: "Hi! I'm looking for new opportunities!",
     profession: "Software Developer and more!",
+    checkMoreAboutMe: 'Check more about me!',
     // About Me
     aboutMe: 'About Me',
     aboutSub: 'Software Developer • Illustrator • Game Developer • and more',
@@ -59,6 +60,7 @@ export default {
     project: 'Projects',
     resume: 'Resume',
     changeTheme: 'Change Theme',
+    chooseYourVillage: 'Choose your Village',
     // Resume
     education: 'Education',
     january: 'January',
