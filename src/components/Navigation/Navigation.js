@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import {
   AppBar,
+  Button,
   CssBaseline,
   Drawer,
   Hidden,
@@ -10,15 +8,18 @@ import {
   List,
   ListItem,
   ListItemText,
-  Toolbar,
-  Button,
+  Toolbar
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import * as actions from "../../store/actions";
-import translate from "../../i18n/translate";
+import CloseIcon from "@material-ui/icons/Close";
+import MenuIcon from "@material-ui/icons/Menu";
 import clsx from "clsx";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import translate from "../../i18n/translate";
+import * as actions from "../../store/actions";
+
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -129,7 +130,7 @@ const Navigation = () => {
         </Link>
         <ListItem button>
           <ListItemText
-            primary={translate("changeTheme")}
+            primary={translate("chooseYourVillage")}
             onClick={() => effectsHandler()}
           />
         </ListItem>
@@ -168,23 +169,29 @@ const Navigation = () => {
 
             <div className={classes.buttons}>
               <Link to="/about" className="nav-items">
-                <Button className="nb-items" color="inherit">{translate("about")}</Button>
+                <Button className="nb-items" color="inherit">
+                  {translate("about")}
+                </Button>
               </Link>
               <Link to="/projects" className="nav-items">
-                <Button className="nb-items" color="inherit">{translate("project")}</Button>
+                <Button className="nb-items" color="inherit">
+                  {translate("project")}
+                </Button>
               </Link>
               <Link to="/resume" className="nav-items">
-                <Button className="nb-items" color="inherit">{translate("resume")}</Button>
+                <Button className="nb-items" color="inherit">
+                  {translate("resume")}
+                </Button>
               </Link>
               <Button
                 variant="outlined"
                 color="inherit"
                 style={{ margin: "0 10px" }}
                 onClick={() => effectsHandler()}
-                className="nav-btn"
+                className="nav-btn animate__animated animate__pulse animate__slow animate__infinite"
                 id="changeTheme"
               >
-                {translate("changeTheme")}
+                {translate("chooseYourVillage")}
               </Button>
               <Button
                 variant="outlined"
