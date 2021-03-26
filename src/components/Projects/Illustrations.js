@@ -1,15 +1,15 @@
-import React, { useState } from "react";
 import {
+  Dialog,
   GridList,
   GridListTile,
-  IconButton,
-  Dialog,
   GridListTileBar,
-  withWidth,
+  IconButton,
   isWidthDown,
   isWidthUp,
+  withWidth
 } from "@material-ui/core";
 import ZoomInIcon from "@material-ui/icons/ZoomIn";
+import React, { useState } from "react";
 import { illustrations } from "../../content/illustrations";
 
 const Illustrations = (props) => {
@@ -40,7 +40,7 @@ const Illustrations = (props) => {
   return (
     <div>
       <GridList cols={cols}>
-        {illustrations.map((project, i) => (
+        {illustrations?.map((project, i) => (
           <GridListTile key={i}>
             <img src={project.image} alt={project.name} />
             <GridListTileBar
