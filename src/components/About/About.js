@@ -1,18 +1,18 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
-  Typography,
-  Container,
-  Grid,
   Box,
-  Divider,
+  Container,
   CssBaseline,
+  Divider,
+  Grid,
+  Typography
 } from "@material-ui/core";
 import {
   createMuiTheme,
-  responsiveFontSizes,
   MuiThemeProvider,
+  responsiveFontSizes
 } from "@material-ui/core/styles";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import translate from "../../i18n/translate";
 
@@ -54,31 +54,22 @@ const About = () => {
 
             <Box paddingX={5}>
               <Typography align="left" className="about-text" paragraph>
-                {translate("aboutLineOne")} <strong>{translate("name")}</strong>.{" "}
-                {translate("aboutLineOneNext")}
+                {translate("aboutLineOne")} <strong>{translate("name")}</strong>
+                . {translate("aboutLineOneNext")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineTwo")}{" "}
                 <strong>{translate("college")}</strong>.{" "}
                 {translate("aboutLineTwoNext")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineThree")}{" "}
-                <strong>{translate("frontend")}</strong>,{" "}
-                <strong>{translate("mobile")}</strong>,{" "}
-                <strong>{translate("illustration")}</strong> {translate("and")}{" "}
-                <strong>{translate("game")}</strong>.
+                <strong>{translate("frontend")}</strong>{" "}
+                {translate("and")}{" "}
+                <strong>{translate("illustration")}.</strong>{" "} 
                 {translate("aboutLineThreeNext")}{" "}
                 <strong>
-                <code className="about-code">{translate("javascript")}</code>
+                  <code className="about-code">{translate("javascript")}</code>
                 </strong>{" "}
                 {translate("aboutLineThreeNextOne")}{" "}
                 <strong>
@@ -109,18 +100,10 @@ const About = () => {
                 {translate("whyNot")}. {translate("live")}{" "}
                 <strong>Venezuela</strong>.
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineFour")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineFive")}{" "}
                 <strong>
                   <Link to="/projects" className="about-code">
