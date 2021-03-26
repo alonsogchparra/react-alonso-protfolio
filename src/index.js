@@ -1,14 +1,15 @@
+import 'animate.css/animate.css';
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { applyMiddleware, compose, createStore } from "redux";
-import rootReducer from "./store/reducers";
-import thunk from 'redux-thunk';
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
-import "./index.css";
+import thunk from "redux-thunk";
 import App from "./App";
+import "./index.css";
 import * as serviceWorker from "./serviceWorker";
+import rootReducer from "./store/reducers";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -19,9 +20,7 @@ const store = createStore(
 
 const app = (
   <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </Provider>
 );
 
