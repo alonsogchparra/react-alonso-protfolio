@@ -1,19 +1,17 @@
+import translate from "../i18n/translate";
+import counter from "../media/images/projects/counter.png";
+import crema from "../media/images/projects/crema.png";
+import entregrados from "../media/images/projects/entregrados.png";
 import guitareact from "../media/images/projects/guitareact.png";
 import marioplans from "../media/images/projects/mario-bros-plans.png";
-import lottie from "../media/images/projects/react_lottie_bootstrap.png";
-import counter from "../media/images/projects/counter.png";
-import ppw from "../media/images/projects/ppw_card.png";
-import oki_card from "../media/images/projects/oki_card.png";
-import vg from "../media/images/projects/vg_4_kids_card.png";
-import entregrados from '../media/images/projects/entregrados.png';
-import crema from '../media/images/projects/crema.png';
-import myWebsite from '../media/images/projects/my_website.png';
-
+import myWebsite from "../media/images/projects/my_website.png";
 import oki_detail from "../media/images/projects/oki.png";
-import vg_detail from "../media/images/projects/vg_4_kids.png";
+import oki_card from "../media/images/projects/oki_card.png";
 import ppw_detail from "../media/images/projects/ppw.png";
-
-import translate from '../i18n/translate';
+import ppw from "../media/images/projects/ppw_card.png";
+import lottie from "../media/images/projects/react_lottie_bootstrap.png";
+import vg_detail from "../media/images/projects/vg_4_kids.png";
+import vg from "../media/images/projects/vg_4_kids_card.png";
 
 export const projects = [
   {
@@ -24,16 +22,10 @@ export const projects = [
       "Mi sitio web lo desarrollé con React.js y el principal proposito de para realizar esto, es para que todos vean que los proyectos que he realizado, bien sea de programación e ilustración, tambien espero mostrar los proyectos en donde he podido colaborar. Además de mostrar la información de los proyectos, compartiré el link para que puedan ver el proyecto en vivo y el repositorio para que puedan revisar como fue desarrollado. Espero seguir actualizando mi sitio web con más proyectos y tener la oportunidad de brindar apoyo en otros proyectos que me permitan conocer más personas y adquirir nuevas habilidades. También lo veo como una forma distinta para mostrar que estoy buscando nuevas oportunidades.",
     image: myWebsite,
     imageDetail: myWebsite,
-    developed: [
-      "React.js",
-      "Redux",
-      "Redux Thunk",
-      "Material UI",
-      "i18next",
-    ],
+    developed: ["React.js", "Redux", "Redux Thunk", "Material UI", "i18next"],
     link: "https://alonsogchparra.web.app/",
     projectLink: "my_website",
-    githubLink: "https://github.com/aliens9889/react-alonso-protfolio",
+    githubLink: "https://github.com/alonsogchparra/react-alonso-protfolio",
     video: "https://www.youtube.com/embed/fdwEjqPFZks",
     id: 10,
   },
@@ -49,12 +41,12 @@ export const projects = [
       "React.js",
       "Redux",
       "Firebase/Firestore",
-      "MaterilizeCSS",
+      "Materialize CSS",
       "Youtube API",
     ],
     link: "https://guitareact.web.app/",
     projectLink: "guitareact",
-    githubLink: "https://github.com/aliens9889/guitareact",
+    githubLink: "https://github.com/alonsogchparra/guitareact",
     video: "https://www.youtube.com/embed/I370AZCxWgk",
     id: 9,
   },
@@ -71,11 +63,11 @@ export const projects = [
       "Redux",
       "Bootstrap",
       "React-Router-Dom",
-      "Adobe Illustrator"
+      "Adobe Illustrator",
     ],
     link: "https://entre-grados-game.web.app/",
     projectLink: "entre_grados",
-    githubLink: "https://github.com/aliens9889/react-entre-grados",
+    githubLink: "https://github.com/alonsogchparra/react-entre-grados",
     video: "https://www.youtube.com/embed/xvWx7gs6OEQ",
     id: 8,
   },
@@ -110,7 +102,7 @@ export const projects = [
     developed: ["React.js", "Redux", "Firebase/Firestore", "MaterilizeCSS"],
     link: "https://mario-bros-plans.firebaseapp.com/",
     projectLink: "mario_bros_plans",
-    githubLink: "https://github.com/aliens9889/react-mario-bros-plans",
+    githubLink: "https://github.com/alonsogchparra/react-mario-bros-plans",
     video: null,
     id: 6,
   },
@@ -130,7 +122,7 @@ export const projects = [
     id: 5,
   },
   {
-    name: translate('reactCounter'),
+    name: translate("reactCounter"),
     description_en:
       "This project or These projects despite the final result is the same the way to get the result is different. What I wanted with this project is to show how you can build a project with others UI frameworks or with other way to get the values. These projects will show you that. The counter will increment + 1, decrement -1, add + 10 and subtract - 15. If you are starting programming and you have knowledge of HTML, CSS and Javascript. The next step is this and the plus of learning you can do it with Redux, that way you will be more secure about build a big project or be part of one. Check the repository or CodeSandBox, I hope this helps you.",
     description_es:
@@ -140,7 +132,7 @@ export const projects = [
     developed: ["React.js", "Redux"],
     link: "https://codesandbox.io/s/counterownstyle-ijlig",
     projectLink: "react_counter",
-    githubLink: null,
+    githubLink: "https://github.com/alonsogchparra/counter-react/tree/develop",
     video: null,
     id: 4,
   },
@@ -155,7 +147,7 @@ export const projects = [
     developed: ["Unity", "Adobe Illustrator"],
     link: "https://aliens9889.itch.io/ping-pong-what",
     projectLink: "ping_pong_what",
-    githubLink: "https://github.com/aliens9889/ping-pong-what",
+    githubLink: "https://github.com/alonsogchparra/ping-pong-what",
     video: null,
     id: 3,
   },
@@ -170,7 +162,7 @@ export const projects = [
     developed: ["Unity", "Adobe Illustrator"],
     link: "https://aliens9889.itch.io/okidoki",
     projectLink: "oki_and_doki",
-    githubLink: "https://github.com/aliens9889/OkiDoki",
+    githubLink: "https://github.com/alonsogchparra/OkiDoki",
     video: "https://www.youtube.com/embed/fQ_I80zTxlk",
     id: 2,
   },

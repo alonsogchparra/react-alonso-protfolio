@@ -1,34 +1,36 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
-  CssBaseline,
-  Typography,
-  Container,
-  Grid,
-  Divider,
   Box,
+  Button,
+  Container,
+  CssBaseline,
+  Divider,
+  Grid,
+  Typography
 } from "@material-ui/core";
 import {
+  createMuiTheme,
+  MuiThemeProvider,
+  responsiveFontSizes
+} from "@material-ui/core/styles";
+import {
+  Description,
+  Email,
   GitHub,
   LinkedIn,
-  Email,
-  Twitter,
-  Description,
+  Twitter
 } from "@material-ui/icons";
-import {
-  createMuiTheme,
-  responsiveFontSizes,
-  MuiThemeProvider,
-} from "@material-ui/core/styles";
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import translate from "../../i18n/translate";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const cv_en =
-  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_en_2020.pdf?alt=media&token=a3501a2d-3856-4cc3-9d01-002855a42a6d";
+  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_english.pdf?alt=media&token=03997255-dbf0-44a3-b350-b12015bfc89a";
 const cv_es =
-  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_es_2020.pdf?alt=media&token=7481a4aa-b803-40ed-a3c0-5eef1875cd76";
+  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_espanol.pdf?alt=media&token=e3cd5250-3f82-483d-919a-5701eb530d02";
 
 const Dashboard = () => {
   const isEnglish = useSelector((state) => state.translate.isEnglish);
@@ -82,10 +84,10 @@ const Dashboard = () => {
                 alignItems="center"
               >
                 <Box m={2} style={{ width: "100%" }}>
-                  <Grid container justify="space-between" alignItems="center">
+                  <Grid container justify="space-around" alignItems="center">
                     <Grid>
                       <a
-                        href="https://github.com/aliens9889"
+                        href="https://github.com/alonsogchparra"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -115,7 +117,7 @@ const Dashboard = () => {
                     </Grid>
                     <Grid>
                       <a
-                        href="https://twitter.com/Aliens9889"
+                        href="https://twitter.com/alonsogchparra"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -140,6 +142,28 @@ const Dashboard = () => {
                   </Grid>
                 </Box>
               </Grid>
+
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Box m={2}>
+                  <Link to="/about">
+                    <Button className="animate__animated animate__pulse animate__slow animate__infinite">
+                      <Typography
+                        variant="h4"
+                        align="center"
+                        className="dash-name"
+                      >
+                        {translate('checkMoreAboutMe')}
+                      </Typography>
+                    </Button>
+                  </Link>
+                </Box>
+              </Grid>
+              
             </Box>
           </Grid>
         </Container>

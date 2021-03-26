@@ -1,21 +1,20 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
-  Container,
-  Grid,
   Box,
-  Divider,
-  Typography,
   Card,
+  CardContent,
+  Container,
+  Divider,
+  Grid,
+  Typography
 } from "@material-ui/core";
-
 import {
   createMuiTheme,
-  responsiveFontSizes,
-  MuiThemeProvider,
   makeStyles,
+  MuiThemeProvider,
+  responsiveFontSizes
 } from "@material-ui/core/styles";
-import { CardContent } from "@material-ui/core";
+import React from "react";
+import { useSelector } from "react-redux";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -34,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ProjectDetails = ({ location }) => {
-
   const title = location.aboutProps.title;
   const descriptionEn = location.aboutProps.descriptionEn;
   const descriptionEs = location.aboutProps.descriptionEs;
@@ -45,7 +43,6 @@ const ProjectDetails = ({ location }) => {
   const githubLink = location.aboutProps.githubLink;
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
-
 
   const checkVideo = (video, image) => {
     if (video === null) {
@@ -125,7 +122,11 @@ const ProjectDetails = ({ location }) => {
             {checkVideo(video, image)}
 
             <Box my={2}>
-              <Divider variant="fullWidth" className="p-divider" style={{ marginTop: '10px', marginBottom: '15px' }} />
+              <Divider
+                variant="fullWidth"
+                className="p-divider"
+                style={{ marginTop: "10px", marginBottom: "15px" }}
+              />
               <Typography align="left" paragraph className="details-text">
                 {isEnglish ? descriptionEn : descriptionEs}
               </Typography>
