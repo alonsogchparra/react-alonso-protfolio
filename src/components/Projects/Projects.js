@@ -1,23 +1,26 @@
-import React, { useState } from "react";
 import {
-  Container,
-  Grid,
-  Box,
-  Divider,
-  Typography,
-  CssBaseline,
+  Box, Container,
+
+
+
+
+  CssBaseline, Divider, Grid,
+
+
+  Typography
 } from "@material-ui/core";
 import {
   createMuiTheme,
-  responsiveFontSizes,
-  MuiThemeProvider,
+
+  MuiThemeProvider, responsiveFontSizes
 } from "@material-ui/core/styles";
-import Project from "./Project";
-import Illustrations from "./Illustrations";
-import translate from "../../i18n/translate";
-import { projects } from "../../content/projects";
+import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
+import { projects } from "../../content/projects";
+import translate from "../../i18n/translate";
+import Illustrations from "./Illustrations";
 import Pagination from "./Pagination";
+import Project from "./Project";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -62,7 +65,7 @@ const Projects = () => {
               justify="center"
               alignItems="center"
             >
-              {currentProjects.map((project) => {
+              {currentProjects?.map((project) => {
                 return (
                   <Project
                     key={project.id}
