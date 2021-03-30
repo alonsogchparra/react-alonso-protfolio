@@ -21,7 +21,7 @@ export default {
     illustration: "Ilustración",
     and: "e",
     game: "Desarrollo de Juegos",
-    aboutLineThreeNext: "La mayor experencia con",
+    aboutLineThreeNext: "La mayor experiencia con",
     javascript: "Javascript",
     aboutLineThreeNextOne: "ha sido desarrollando con",
     react: 'React.js',
