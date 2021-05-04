@@ -39,20 +39,20 @@ const About = () => {
               </Typography>
               <Divider variant="fullWidth" className="p-divider" />
             </Box>
-            <Grid>
+            <Grid className="animate__animated animate__fadeIn">
               <img src={coinImage} alt="element" style={{ width: "120px" }} />
             </Grid>
             <Box my={2}>
               <Typography
                 variant="subtitle2"
                 align="center"
-                className="about-text"
+                className="about-text animate__animated animate__fadeIn"
               >
                 {translate("aboutSub")}
               </Typography>
             </Box>
 
-            <Box paddingX={5}>
+            <Box paddingX={5} className="animate__animated animate__fadeIn">
               <Typography align="left" className="about-text" paragraph>
                 {translate("aboutLineOne")} <strong>{translate("name")}</strong>
                 . {translate("aboutLineOneNext")}
@@ -64,9 +64,8 @@ const About = () => {
               </Typography>
               <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineThree")}{" "}
-                <strong>{translate("frontend")}</strong>{" "}
-                {translate("and")}{" "}
-                <strong>{translate("illustration")}.</strong>{" "} 
+                <strong>{translate("frontend")}</strong> {translate("and")}{" "}
+                <strong>{translate("illustration")}.</strong>{" "}
                 {translate("aboutLineThreeNext")}{" "}
                 <strong>
                   <code className="about-code">{translate("javascript")}</code>
@@ -113,7 +112,7 @@ const About = () => {
                 {translate("aboutLineFiveOne")}
               </Typography>
             </Box>
-            <Box width="100%">
+            <Box width="100%" className="animate__animated animate__fadeIn">
               <Divider variant="fullWidth" className="p-divider" />
               <Box py={2}>
                 <Typography variant="h5" align="center" className="about-text">
