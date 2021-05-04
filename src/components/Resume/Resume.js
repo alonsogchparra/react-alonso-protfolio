@@ -25,6 +25,7 @@ import qaroni from "../../media/images/work/qaroni.png";
 import ua from "../../media/images/work/uakami.png";
 import vascar from "../../media/images/work/vascar.png";
 import Experience from "./Experience";
+import Technologies from "./Technologies";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -38,14 +39,18 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(12),
     height: theme.spacing(12),
   },
+  small: {
+    width: theme.spacing(8),
+    height: theme.spacing(8),
+  },
 }));
 
 const Resume = () => {
   const classes = useStyles();
   const cv_en =
-    "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_english.pdf?alt=media&token=03997255-dbf0-44a3-b350-b12015bfc89a";
+    "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ENG.pdf?alt=media&token=17f6fc33-dc47-4202-8bce-c46d5a1c7097";
   const cv_es =
-    "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_espanol.pdf?alt=media&token=e3cd5250-3f82-483d-919a-5701eb530d02";
+    "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ESP.pdf?alt=media&token=51b95b0c-7039-4234-81aa-c0d86993803f";
   const isEnglish = useSelector((state) => state.translate.isEnglish);
 
   return (
@@ -59,7 +64,7 @@ const Resume = () => {
             justify="center"
             alignItems="center"
           >
-            <Grid>
+            <Grid className="animate__animated animate__fadeIn">
               <Box>
                 <Avatar
                   alt="Alonso Parra"
@@ -69,7 +74,12 @@ const Resume = () => {
               </Box>
             </Grid>
 
-            <Grid container justify="center" alignItems="center">
+            <Grid
+              container
+              justify="center"
+              alignItems="center"
+              className="animate__animated animate__fadeIn"
+            >
               <Box m={1}>
                 <Typography variant="h3" className="resume-title">
                   {translate("resume")}
@@ -84,7 +94,7 @@ const Resume = () => {
                   <Description
                     fontSize="large"
                     style={{ fontSize: "3.1875rem" }}
-                    className="resume-icon"
+                    className="resume-icon animate__animated animate__fadeIn"
                   />
                 </a>
               </Box>
@@ -104,6 +114,7 @@ const Resume = () => {
               justify="center"
               alignItems="center"
               style={{ marginBottom: "2.2rem" }}
+              className="animate__animated animate__fadeIn"
             >
               <Box m={2}>
                 <Grid
@@ -134,13 +145,29 @@ const Resume = () => {
             <Grid container>
               <Box width="100%" mb={2}>
                 <Typography variant="h4" className="resume-education">
+                  {translate("technologies")}
+                </Typography>
+                <Divider className="p-divider" />
+              </Box>
+            </Grid>
+
+            <Technologies size={classes.small} />
+
+            <Grid container>
+              <Box width="100%" mb={2}>
+                <Typography variant="h4" className="resume-education">
                   {translate("experience")}
                 </Typography>
                 <Divider className="p-divider" />
               </Box>
             </Grid>
 
-            <Grid container justify="center" alignItems="center">
+            <Grid
+              container
+              justify="center"
+              alignItems="center"
+              className="animate__animated animate__fadeIn"
+            >
               <Experience
                 imgLogo={ua}
                 logoSize={classes.medium}
@@ -180,7 +207,6 @@ const Resume = () => {
                 time="Oct 2021 - Mar 2021"
                 profession={true}
               />
-
             </Grid>
           </Grid>
         </Container>
