@@ -28,16 +28,16 @@ let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const cv_en =
-  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_english.pdf?alt=media&token=03997255-dbf0-44a3-b350-b12015bfc89a";
+  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ENG.pdf?alt=media&token=17f6fc33-dc47-4202-8bce-c46d5a1c7097";
 const cv_es =
-  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_espanol.pdf?alt=media&token=e3cd5250-3f82-483d-919a-5701eb530d02";
+  "https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ESP.pdf?alt=media&token=51b95b0c-7039-4234-81aa-c0d86993803f";
 
 const Dashboard = () => {
   const isEnglish = useSelector((state) => state.translate.isEnglish);
   const coinImage = useSelector((state) => state.theme.coinImage);
 
   return (
-    <div>
+    <div className="animate__animated animate__slow animate__fadeIn">
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="md">
@@ -157,13 +157,12 @@ const Dashboard = () => {
                         align="center"
                         className="dash-name"
                       >
-                        {translate('checkMoreAboutMe')}
+                        {translate("checkMoreAboutMe")}
                       </Typography>
                     </Button>
                   </Link>
                 </Box>
               </Grid>
-              
             </Box>
           </Grid>
         </Container>
