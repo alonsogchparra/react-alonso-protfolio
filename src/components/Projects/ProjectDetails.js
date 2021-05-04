@@ -80,7 +80,10 @@ const ProjectDetails = ({ location }) => {
   };
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div
+      style={{ marginTop: "30px" }}
+      className="animate__animated animate__fadeIn"
+    >
       <MuiThemeProvider theme={theme}>
         <Container maxWidth="lg">
           <Grid
