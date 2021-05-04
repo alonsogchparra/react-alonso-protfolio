@@ -7,7 +7,7 @@ export default {
     profession: "Software Developer and more!",
     checkMoreAboutMe: 'Check more about me!',
     // About Me
-    aboutMe: 'About Me',
+    aboutMe: 'About me',
     aboutSub: 'Software Developer • Frontend Developer • Illustrator • and more',
     aboutLineOne: "Hi everyone! My name is  ",
     name: "Alonso Parra",
@@ -69,5 +69,6 @@ export default {
     devFrontend: 'Front-End Developer',
     devGame: 'Game Developer',
     illustrator: 'Illustrator',
+    technologies: 'Technologies'
   }
 }
