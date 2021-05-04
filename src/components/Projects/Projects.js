@@ -1,18 +1,15 @@
 import {
-  Box, Container,
-
-
-
-
-  CssBaseline, Divider, Grid,
-
-
+  Box,
+  Container,
+  CssBaseline,
+  Divider,
+  Grid,
   Typography
 } from "@material-ui/core";
 import {
   createMuiTheme,
-
-  MuiThemeProvider, responsiveFontSizes
+  MuiThemeProvider,
+  responsiveFontSizes
 } from "@material-ui/core/styles";
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
@@ -38,7 +35,10 @@ const Projects = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div
+      style={{ marginTop: "30px" }}
+      className="animate__animated animate__fadeIn"
+    >
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="lg">
