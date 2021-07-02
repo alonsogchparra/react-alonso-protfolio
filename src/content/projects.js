@@ -1,4 +1,5 @@
 import translate from "../i18n/translate";
+import autocorrector from "../media/images/projects/autocorrector.png";
 import counter from "../media/images/projects/counter.png";
 import crema from "../media/images/projects/crema.png";
 import entregrados from "../media/images/projects/entregrados.png";
@@ -14,6 +15,21 @@ import vg_detail from "../media/images/projects/vg_4_kids.png";
 import vg from "../media/images/projects/vg_4_kids_card.png";
 
 export const projects = [
+  {
+    name: "Autocorrector (Tiny)",
+    description_en:
+      "Autocorrector (Tiny) is a web application where you as user you can add the misspelled word and the right word. That way the application on the textarea once you write the word (misspelled, as you added previously) when you press the space button this will update the content with the right word. If you want to add a misspelled word and it is already added, the application won't let you add it for that reason. Also you will have the Correction's list to check the words you have and you can use to make the autocorrector works.",
+    description_es:
+      "Autocorrector (Tiny) es una aplicación web donde tú como usuario puedes agregar la palabra mal escrita y la palabra correcta. De esa manera, la aplicación en el área de texto una vez que escriba la palabra (mal escrita, como agregó anteriormente) cuando presione el botón de espacio, esto actualizará el contenido con la palabra correcta. Si desea agregar una palabra mal escrita y ya está agregada, la aplicación no le permitirá agregarla por ese motivo. También tendrás la lista de Correcciones para comprobar las palabras que tienes y puedes usar para hacer que el autocorrector funcione.",
+    image: autocorrector,
+    imageDetail: autocorrector,
+    developed: ["React.js", "Bootstrap 5", "Animate.css", "Github(Page)"],
+    link: "https://alonsogchparra.github.io/autocorrector-react/",
+    projectLink: "autocorrector",
+    githubLink: "https://github.com/alonsogchparra/autocorrector-react",
+    video: "https://www.youtube.com/embed/b2_ZAxv3Wn0",
+    id: 11,
+  },
   {
     name: translate("myWebsite"),
     description_en:
