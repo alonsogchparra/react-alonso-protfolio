@@ -18,7 +18,7 @@ export const projects = [
   {
     name: "Autocorrector (Tiny)",
     description_en:
-      "Autocorrector (Tiny) is a web application where you as user you can add the misspelled word and the right word. That way the application on the textarea once you write the word (misspelled, as you added previously) when you press the space button this will update the content with the right word. If you want to add a misspelled word and it is already added, the application won't let you add it for that reason. Also you will have the Correction's list to check the words you have and you can use to make the autocorrector works.",
+      "Autocorrector (Tiny) is a web application where you as an user you can add the misspelled word and the right word. That way the application on the textarea once you write the word (misspelled, as you added previously) when you press the space button this will update the content with the right word. If you want to add a misspelled word and it is already added, the application won't let you add it for that reason. Also you will have the Correction's list to check the words you have and you can use to make the autocorrector works.",
     description_es:
       "Autocorrector (Tiny) es una aplicación web donde tú como usuario puedes agregar la palabra mal escrita y la palabra correcta. De esa manera, la aplicación en el área de texto una vez que escriba la palabra (mal escrita, como agregó anteriormente) cuando presione el botón de espacio, esto actualizará el contenido con la palabra correcta. Si desea agregar una palabra mal escrita y ya está agregada, la aplicación no le permitirá agregarla por ese motivo. También tendrás la lista de Correcciones para comprobar las palabras que tienes y puedes usar para hacer que el autocorrector funcione.",
     image: autocorrector,
@@ -110,12 +110,12 @@ export const projects = [
   {
     name: "Mario Bros Plans",
     description_en:
-      "It is an web app where you can sign in or sign up and post notes. The original project it's from The Net Ninja (You can find him on YouTube). The Challenge here was update the project using Firebase/Firestore V3 and make the project works as well like the original version (The original project works with a previous version of Firebase/Firestore). The result is the same but the configuration to make work the project with React.js it changed, so it worked to do this project on this way, more people know will how to work with this new version.",
+      "It is a web app where you can sign in or sign up and post notes. The original project it's from The Net Ninja (You can find him on YouTube). The Challenge here was update the project using Firebase/Firestore V3 and make the project works as well like the original version (The original project works with a previous version of Firebase/Firestore). The result is the same but the configuration to make work the project with React.js it changed, so it worked to do this project on this way, more people know will how to work with this new version.",
     description_es:
       "Es una aplicación web donde puede iniciar sesión o registrarse y publicar notas. El proyecto original es de The Net Ninja (puedes encontrarlo en YouTube). El desafío aquí fue actualizar el proyecto usando Firebase / Firestore V3 y hacer que el proyecto funcione tan bien como la versión original (el proyecto original funciona con una versión anterior de Firebase / Firestore). El resultado es el mismo pero la configuración para hacer funcionar el proyecto con React.js cambió, por lo que funcionó para hacer este proyecto de esta manera, más gente sabrá cómo trabajar con esta nueva versión.",
     image: marioplans,
     imageDetail: marioplans,
-    developed: ["React.js", "Redux", "Firebase/Firestore", "MaterilizeCSS"],
+    developed: ["React.js", "Redux", "Firebase/Firestore", "MaterializeCSS"],
     link: "https://mario-bros-plans.firebaseapp.com/",
     projectLink: "mario_bros_plans",
     githubLink: "https://github.com/alonsogchparra/react-mario-bros-plans",
@@ -125,7 +125,7 @@ export const projects = [
   {
     name: "React + Lottie + Bootstrap",
     description_en:
-      "This project was for a client who wanted move the design from photoshop to web. Besides the client wanted this project responsive, wanted also added some animation from some images, so what I did was take the design to recreate the website with React.js and Bootstrap and I took some images and illustrate other ones to build the animations with Adobe After Effects. Using Bodymovin I could translate those animation to React with Lottie. The result was amazing, and it was very interesting how I could handled differents things to put all of them together on the same project. I really enjoyed the result of this project.",
+      "This project was for a client who wanted to move the design from photoshop to web. Besides the client wanted this project responsive, wanted also added some animation from some images, so what I did was take the design to recreate the website with React.js and Bootstrap and I took some images and illustrate other ones to build the animations with Adobe After Effects. Using Bodymovin I could translate those animation to React with Lottie. The result was amazing, and it was very interesting how I could handled differents things to put all of them together on the same project. I really enjoyed the result of this project.",
     description_es:
       "Este proyecto fue para un cliente que quería trasladar el diseño de photoshop a web. Además, el cliente quería que este proyecto fuera responsive, también quería agregar algo de animación de algunas imágenes, así que lo que hice fue tomar el diseño para recrear el sitio web con React.js y Bootstrap y tomé algunas imágenes e ilustre otras para construir las animaciones con Adobe After Effects. Usando Bodymovin pude traducir esas animaciones a React con Lottie. El resultado fue asombroso, y fue muy interesante cómo se pudo manejar diferentes cosas para juntarlas todas en el mismo proyecto. Realmente disfruté el resultado de este proyecto.",
     image: lottie,

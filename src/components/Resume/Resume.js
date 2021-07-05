@@ -204,7 +204,7 @@ const Resume = () => {
                 imgLogo={qaroni}
                 logoSize={classes.medium}
                 place="Qaroní"
-                time="Oct 2021 - Mar 2021"
+                time="Oct 2020 - Mar 2021"
                 profession={true}
               />
             </Grid>
