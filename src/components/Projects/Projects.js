@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <div
-      style={{ marginTop: "30px", overflowY: "hidden" }}
+      style={{ marginTop: "30px", overflowY: "hidden", overflowX: "hidden" }}
       className="animate__animated animate__fadeIn"
     >
       <MuiThemeProvider theme={theme}>
