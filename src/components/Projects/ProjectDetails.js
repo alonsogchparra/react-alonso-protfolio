@@ -33,14 +33,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ProjectDetails = ({ location }) => {
-  const title = location.aboutProps.title;
-  const descriptionEn = location.aboutProps.descriptionEn;
-  const descriptionEs = location.aboutProps.descriptionEs;
-  const developed = location.aboutProps.developed;
-  const video = location.aboutProps.video;
-  const image = location.aboutProps.imageDetail;
-  const link = location.aboutProps.link;
-  const githubLink = location.aboutProps.githubLink;
+  const {
+    title,
+    descriptionEn,
+    descriptionEs,
+    developed,
+    video,
+    image,
+    link,
+    githubLink,
+  } = location.aboutProps;
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
 
