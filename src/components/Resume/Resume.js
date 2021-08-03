@@ -17,13 +17,6 @@ import { Description } from "@material-ui/icons";
 import React from "react";
 import { useSelector } from "react-redux";
 import translate from "../../i18n/translate";
-import perfil from "../../media/images/perfil/perfil.png";
-import ula from "../../media/images/studies/ula_logo.png";
-import goapps from "../../media/images/work/goapps.png";
-import likinvent from "../../media/images/work/likinvent.png";
-import qaroni from "../../media/images/work/qaroni.png";
-import ua from "../../media/images/work/uakami.png";
-import vascar from "../../media/images/work/vascar.png";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
 
@@ -68,7 +61,7 @@ const Resume = () => {
               <Box>
                 <Avatar
                   alt="Alonso Parra"
-                  src={perfil}
+                  src="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/profile%2Fperfil.png?alt=media&token=eb528175-3393-4094-babd-9504ed72b4a9"
                   className={classes.large}
                 />
               </Box>
@@ -123,7 +116,10 @@ const Resume = () => {
                   alignItems="center"
                   style={{ marginBottom: "10px" }}
                 >
-                  <Avatar src={ula} className={classes.large} />
+                  <Avatar
+                    src="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/studies%2Fula_logo.png?alt=media&token=4bf603ec-da62-4084-8bfd-f02d9a3d989b"
+                    className={classes.large}
+                  />
                 </Grid>
                 <Typography
                   variant="h5"
@@ -169,7 +165,7 @@ const Resume = () => {
               className="animate__animated animate__fadeIn"
             >
               <Experience
-                imgLogo={ua}
+                imgLogo="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fuakami.png?alt=media&token=73ece3e4-1b6c-4bfe-b886-ee5cb8026580"
                 logoSize={classes.medium}
                 place="Uakami Studios"
                 time="2016 - Jun 2017"
@@ -177,7 +173,7 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={likinvent}
+                imgLogo="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Flikinvent.png?alt=media&token=fa1631f7-7efa-4828-a146-4adeef2363d7"
                 logoSize={classes.medium}
                 place="Likinvent Studios"
                 time="2015 - 2017"
@@ -185,7 +181,7 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={vascar}
+                imgLogo="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fvascar.png?alt=media&token=68d748d8-1e7c-4eb6-825d-6ca8e53b3926"
                 logoSize={classes.medium}
                 place="Vascar Solutions"
                 time="Jul 2017 - Mar 2018"
@@ -193,7 +189,7 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={goapps}
+                imgLogo="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fgoapps.png?alt=media&token=d58d8d5c-9d10-4f22-9105-4186c9349924"
                 logoSize={classes.medium}
                 place="Go Apps"
                 time="Nov 2018 - Mar 2019"
@@ -201,7 +197,7 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={qaroni}
+                imgLogo="https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fqaroni.png?alt=media&token=00904a10-5524-4139-a4a7-74b0cfaa7949"
                 logoSize={classes.medium}
                 place="Qaroní"
                 time="Oct 2020 - Mar 2021"
