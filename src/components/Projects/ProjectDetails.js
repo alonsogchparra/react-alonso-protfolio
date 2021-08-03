@@ -39,21 +39,21 @@ const ProjectDetails = ({ location }) => {
     descriptionEs,
     developed,
     video,
-    image,
+    imageDetail,
     link,
     githubLink,
   } = location.aboutProps;
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
 
-  const checkVideo = (video, image) => {
+  const checkVideo = (video, imageDetail) => {
     if (video === null) {
       return (
         <Grid container justify="center" alignItems="center">
           <Box boxShadow={5}>
             <Card className={classes.root}>
               <CardContent>
-                <img src={image} alt="project_image" width="100%" />
+                <img src={imageDetail} alt="project_image" width="100%" />
               </CardContent>
             </Card>
           </Box>
@@ -124,7 +124,7 @@ const ProjectDetails = ({ location }) => {
               })}
             </Grid>
 
-            {checkVideo(video, image)}
+            {checkVideo(video, imageDetail)}
 
             <Box my={2}>
               <Divider
