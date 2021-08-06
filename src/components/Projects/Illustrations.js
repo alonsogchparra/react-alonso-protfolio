@@ -47,8 +47,8 @@ const Illustrations = (props) => {
               title={project.name}
               subtitle={
                 project.developed.length > 1
-                  ? project.developed.map((dev) => dev + ", ")
-                  : project.developed.map((dev) => dev)
+                  ? project.developed.join(',')
+                  : project.developed[0]
               }
               actionIcon={
                 <IconButton onClick={() => openHandler(project.image)}>
