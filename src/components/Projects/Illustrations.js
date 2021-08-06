@@ -47,7 +47,7 @@ const Illustrations = (props) => {
               title={project.name}
               subtitle={
                 project.developed.length > 1
-                  ? project.developed.join(',')
+                  ? project.developed.join(', ')
                   : project.developed[0]
               }
               actionIcon={
