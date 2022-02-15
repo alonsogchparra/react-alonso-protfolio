@@ -69,6 +69,7 @@ export default {
     devFrontend: 'Front-End Developer',
     devGame: 'Game Developer',
     illustrator: 'Illustrator',
-    technologies: 'Technologies'
+    technologies: 'Technologies',
+    currently: 'Currently'
   }
 }
