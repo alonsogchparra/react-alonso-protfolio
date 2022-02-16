@@ -19,3 +19,14 @@ export const RESUMEN = {
   ARKUSNEXUS:
     'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Farkus.png?alt=media&token=c76103e8-4427-4668-acc4-901e9bdbd414',
 };
+
+export const DASHBOARD = {
+  CV_ENGLISH:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ENG.pdf?alt=media&token=17f6fc33-dc47-4202-8bce-c46d5a1c7097',
+  CV_SPANISH:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2021_ESP.pdf?alt=media&token=51b95b0c-7039-4234-81aa-c0d86993803f',
+  LINKEDIN: 'https://www.linkedin.com/in/alonso-parra/',
+  TWITTER: 'https://twitter.com/alonsogchparra',
+  GITHUB: 'https://github.com/alonsogchparra',
+  MAILT_TO: 'mailto:alonsogparra@gmail.com',
+};
