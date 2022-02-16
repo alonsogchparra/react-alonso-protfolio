@@ -1,18 +1,18 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
-  Typography,
-  Container,
-  Grid,
   Box,
-  Divider,
+  Container,
   CssBaseline,
+  Divider,
+  Grid,
+  Typography
 } from "@material-ui/core";
 import {
   createMuiTheme,
-  responsiveFontSizes,
   MuiThemeProvider,
+  responsiveFontSizes
 } from "@material-ui/core/styles";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import translate from "../../i18n/translate";
 
@@ -39,46 +39,36 @@ const About = () => {
               </Typography>
               <Divider variant="fullWidth" className="p-divider" />
             </Box>
-            <Grid>
+            <Grid className="animate__animated animate__fadeIn">
               <img src={coinImage} alt="element" style={{ width: "120px" }} />
             </Grid>
             <Box my={2}>
               <Typography
                 variant="subtitle2"
                 align="center"
-                className="about-text"
+                className="about-text animate__animated animate__fadeIn"
               >
                 {translate("aboutSub")}
               </Typography>
             </Box>
 
-            <Box paddingX={5}>
+            <Box paddingX={5} className="animate__animated animate__fadeIn">
               <Typography align="left" className="about-text" paragraph>
-                {translate("aboutLineOne")} <strong>{translate("name")}</strong>.{" "}
-                {translate("aboutLineOneNext")}
+                {translate("aboutLineOne")} <strong>{translate("name")}</strong>
+                . {translate("aboutLineOneNext")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineTwo")}{" "}
                 <strong>{translate("college")}</strong>.{" "}
                 {translate("aboutLineTwoNext")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineThree")}{" "}
-                <strong>{translate("frontend")}</strong>,{" "}
-                <strong>{translate("mobile")}</strong>,{" "}
-                <strong>{translate("illustration")}</strong> {translate("and")}{" "}
-                <strong>{translate("game")}</strong>.
+                <strong>{translate("frontend")}</strong> {translate("and")}{" "}
+                <strong>{translate("illustration")}.</strong>{" "}
                 {translate("aboutLineThreeNext")}{" "}
                 <strong>
-                <code className="about-code">{translate("javascript")}</code>
+                  <code className="about-code">{translate("javascript")}</code>
                 </strong>{" "}
                 {translate("aboutLineThreeNextOne")}{" "}
                 <strong>
@@ -109,18 +99,10 @@ const About = () => {
                 {translate("whyNot")}. {translate("live")}{" "}
                 <strong>Venezuela</strong>.
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineFour")}
               </Typography>
-              <Typography
-                align="left"
-                paragraph="true"
-                className="about-text"
-              >
+              <Typography align="left" paragraph={true} className="about-text">
                 {translate("aboutLineFive")}{" "}
                 <strong>
                   <Link to="/projects" className="about-code">
@@ -130,7 +112,7 @@ const About = () => {
                 {translate("aboutLineFiveOne")}
               </Typography>
             </Box>
-            <Box width="100%">
+            <Box width="100%" className="animate__animated animate__fadeIn">
               <Divider variant="fullWidth" className="p-divider" />
               <Box py={2}>
                 <Typography variant="h5" align="center" className="about-text">

@@ -1,20 +1,20 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
-  Typography,
-  Button,
-  Grid,
   Divider,
+  Grid,
+  Typography
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link, withRouter } from "react-router-dom";
 import clsx from "clsx";
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link, withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -122,7 +122,11 @@ const Project = ({
                 target="_blank"
                 className="project-link"
               >
-                <Button size="small" color="primary" className="project-link project-option">
+                <Button
+                  size="small"
+                  color="primary"
+                  className="project-link project-option"
+                >
                   {isEnglish ? "Check Project" : "Mira el Proyecto"}
                 </Button>
               </a>
