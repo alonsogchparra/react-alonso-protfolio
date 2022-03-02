@@ -33,8 +33,7 @@ const useStyles = makeStyles((theme) => ({
 const Project = ({
   title,
   image,
-  descriptionEn,
-  descriptionEs,
+  description,
   developed,
   link,
   projectLink,
@@ -59,8 +58,7 @@ const Project = ({
                   pathname: `/projects/${projectLink}`,
                   aboutProps: {
                     title,
-                    descriptionEn,
-                    descriptionEs,
+                    description,
                     developed,
                     video,
                     imageDetail,
@@ -85,7 +83,7 @@ const Project = ({
                     {title}
                   </Typography>
                   <Typography noWrap className="project-description">
-                    {isEnglish ? descriptionEn : descriptionEs}
+                    {description}
                   </Typography>
                 </CardContent>
               </Link>
@@ -97,8 +95,7 @@ const Project = ({
                   pathname: `/projects/${projectLink}`,
                   aboutProps: {
                     title,
-                    descriptionEn,
-                    descriptionEs,
+                    description,
                     developed,
                     video,
                     imageDetail,
