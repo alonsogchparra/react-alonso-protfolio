@@ -4,20 +4,20 @@ import {
   CssBaseline,
   Divider,
   Grid,
-  Typography
-} from "@material-ui/core";
+  Typography,
+} from '@material-ui/core';
 import {
   createMuiTheme,
   MuiThemeProvider,
-  responsiveFontSizes
-} from "@material-ui/core/styles";
-import React, { useState } from "react";
-import { withRouter } from "react-router-dom";
-import { projects } from "../../content/projects";
-import translate from "../../i18n/translate";
-import Illustrations from "./Illustrations";
-import Pagination from "./Pagination";
-import Project from "./Project";
+  responsiveFontSizes,
+} from '@material-ui/core/styles';
+import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
+import { projects } from '../../content/projects';
+import translate from '../../i18n/translate';
+import Illustrations from './Illustrations';
+import Pagination from './Pagination';
+import Project from './Project';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -36,42 +36,41 @@ const Projects = () => {
 
   return (
     <div
-      style={{ marginTop: "30px", overflowY: "hidden", overflowX: "hidden" }}
-      className="animate__animated animate__fadeIn"
+      style={{ marginTop: '30px', overflowY: 'hidden', overflowX: 'hidden' }}
+      className='animate__animated animate__fadeIn'
     >
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <Grid
             container
-            direction="column"
-            justify="center"
-            alignItems="center"
+            direction='column'
+            justify='center'
+            alignItems='center'
           >
-            <Box width="100%">
+            <Box width='100%'>
               <Typography
-                variant="h3"
-                align="center"
-                className="projects-title"
+                variant='h3'
+                align='center'
+                className='projects-title'
               >
-                {translate("projectTitle")}
+                {translate('projectTitle')}
               </Typography>
-              <Divider variant="fullWidth" className="p-divider" />
+              <Divider variant='fullWidth' className='p-divider' />
             </Box>
 
             <Grid
               container
-              direction="row"
-              justify="center"
-              alignItems="center"
+              direction='row'
+              justify='center'
+              alignItems='center'
             >
               {currentProjects?.map((project) => {
                 return (
                   <Project
                     key={project.id}
                     title={project.name}
-                    descriptionEn={project.description_en}
-                    descriptionEs={project.description_es}
+                    description={project?.description}
                     developed={project.developed}
                     image={project.image}
                     link={project.link}
@@ -86,30 +85,30 @@ const Projects = () => {
 
             <Grid
               container
-              direction="column"
-              justify="center"
-              alignItems="center"
+              direction='column'
+              justify='center'
+              alignItems='center'
             >
               <Grid>
                 <Box mb={1}>
                   <Typography
-                    variant="h4"
-                    align="right"
-                    className="projects-title"
+                    variant='h4'
+                    align='right'
+                    className='projects-title'
                   >
-                    {translate("pageNumber")}
+                    {translate('pageNumber')}
                   </Typography>
                 </Box>
               </Grid>
 
               <Box
                 mb={5}
-                width="100%"
-                justifyContent="center"
-                alignItems="center"
+                width='100%'
+                justifyContent='center'
+                alignItems='center'
               >
-                <Divider variant="fullWidth" className="p-divider" />
-                <Grid container justify="center" alignItems="center">
+                <Divider variant='fullWidth' className='p-divider' />
+                <Grid container justify='center' alignItems='center'>
                   <Pagination
                     currentPage={currentPage}
                     projectPerPage={projectPerPage}
@@ -117,26 +116,26 @@ const Projects = () => {
                     paginate={paginate}
                   />
                 </Grid>
-                <Divider variant="fullWidth" className="p-divider" />
+                <Divider variant='fullWidth' className='p-divider' />
               </Box>
             </Grid>
 
-            <Box width="100%" mt={2} mb={2}>
+            <Box width='100%' mt={2} mb={2}>
               <Typography
-                variant="h3"
-                align="center"
-                className="projects-title"
+                variant='h3'
+                align='center'
+                className='projects-title'
               >
-                {translate("illustrationTitle")}
+                {translate('illustrationTitle')}
               </Typography>
-              <Divider variant="fullWidth" className="p-divider" />
+              <Divider variant='fullWidth' className='p-divider' />
             </Box>
 
             <Grid
               container
-              direction="row"
-              justify="center"
-              alignItems="center"
+              direction='row'
+              justify='center'
+              alignItems='center'
             >
               <Illustrations />
             </Grid>

@@ -5,8 +5,8 @@ body {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -145,6 +145,27 @@ svg.dash-icon:hover {
 .project-title {
   transition: color 0.5s ease;
   color: var(--project-title);
+}
+
+.project-label-title {
+  text-align: center;
+}
+
+.personal-option span.MuiIconButton-label,
+.profesional-option span.MuiIconButton-label {
+  color: var(--nav-bg);
+}
+
+.personal-option.MuiRadio-colorSecondary.Mui-checked,
+.profesional-option.MuiRadio-colorSecondary.Mui-checked {
+  color: var(--nav-bg);
+}
+
+.personal-option.MuiIconButton-colorSecondary:hover,
+.profesional-option.MuiIconButton-colorSecondary:hover,
+.personal-option.MuiRadio-colorSecondary.Mui-checked:hover,
+.profesional-option.MuiRadio-colorSecondary.Mui-checked:hover {
+  background-color: var(--projects-radio-button-hover);
 }
 
 .project-link {

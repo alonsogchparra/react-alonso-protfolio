@@ -5,17 +5,17 @@ import {
   Container,
   Divider,
   Grid,
-  Typography
-} from "@material-ui/core";
+  Typography,
+} from '@material-ui/core';
 import {
   createMuiTheme,
   makeStyles,
   MuiThemeProvider,
-  responsiveFontSizes
-} from "@material-ui/core/styles";
-import React from "react";
-import { useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+  responsiveFontSizes,
+} from '@material-ui/core/styles';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 845,
     width: 500,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       maxWidth: 350,
     },
   },
@@ -35,8 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectDetails = ({ location }) => {
   const title = location?.aboutProps?.title;
-  const descriptionEn = location?.aboutProps?.descriptionEn;
-  const descriptionEs = location?.aboutProps?.descriptionEs;
+  const description = location?.aboutProps?.description;
   const developed = location?.aboutProps?.developed;
   const video = location?.aboutProps?.video;
   const imageDetail = location?.aboutProps?.imageDetail;
@@ -49,11 +48,11 @@ const ProjectDetails = ({ location }) => {
   const checkVideo = (video, imageDetail) => {
     if (video === null) {
       return (
-        <Grid container justify="center" alignItems="center">
+        <Grid container justify='center' alignItems='center'>
           <Box boxShadow={5}>
             <Card className={classes.root}>
               <CardContent>
-                <img src={imageDetail} alt="project_image" width="100%" />
+                <img src={imageDetail} alt='project_image' width='100%' />
               </CardContent>
             </Card>
           </Box>
@@ -61,17 +60,17 @@ const ProjectDetails = ({ location }) => {
       );
     } else {
       return (
-        <Grid container justify="center" alignItems="center">
+        <Grid container justify='center' alignItems='center'>
           <Box boxShadow={5}>
             <Card className={classes.root}>
               <CardContent>
                 <iframe
                   src={video}
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  title="video"
-                  width="100%"
-                  height="250"
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  title='video'
+                  width='100%'
+                  height='250'
                 />
               </CardContent>
             </Card>
@@ -84,44 +83,44 @@ const ProjectDetails = ({ location }) => {
   return (
     <>
       {!title && !developed ? (
-        <Redirect to="/" />
+        <Redirect to='/' />
       ) : (
         <div
-          style={{ marginTop: "30px" }}
-          className="animate__animated animate__fadeIn"
+          style={{ marginTop: '30px' }}
+          className='animate__animated animate__fadeIn'
         >
           <MuiThemeProvider theme={theme}>
-            <Container maxWidth="lg">
+            <Container maxWidth='lg'>
               <Grid
                 container
-                direction="column"
-                justify="center"
-                alignItems="center"
+                direction='column'
+                justify='center'
+                alignItems='center'
               >
-                <Grid container justify="center" alignItems="center">
-                  <Box width="100%">
+                <Grid container justify='center' alignItems='center'>
+                  <Box width='100%'>
                     <Typography
-                      variant="h3"
-                      align="center"
-                      className="details-title"
+                      variant='h3'
+                      align='center'
+                      className='details-title'
                     >
                       {title}
                     </Typography>
-                    <Divider variant="fullWidth" className="p-divider" />
+                    <Divider variant='fullWidth' className='p-divider' />
                   </Box>
                 </Grid>
 
                 <Grid
                   container
-                  direction="row"
-                  justify="center"
-                  alignItems="center"
+                  direction='row'
+                  justify='center'
+                  alignItems='center'
                 >
                   {developed &&
                     developed.map((dev, i) => {
                       return (
                         <Box m={2} key={i}>
-                          <Typography variant="body1" className="details-dev">
+                          <Typography variant='body1' className='details-dev'>
                             <strong>{dev}</strong>
                           </Typography>
                         </Box>
@@ -133,63 +132,63 @@ const ProjectDetails = ({ location }) => {
 
                 <Box my={2}>
                   <Divider
-                    variant="fullWidth"
-                    className="p-divider"
-                    style={{ marginTop: "10px", marginBottom: "15px" }}
+                    variant='fullWidth'
+                    className='p-divider'
+                    style={{ marginTop: '10px', marginBottom: '15px' }}
                   />
-                  <Typography align="left" paragraph className="details-text">
-                    {isEnglish ? descriptionEn : descriptionEs}
+                  <Typography align='left' paragraph className='details-text'>
+                    {description}
                   </Typography>
-                  <Divider variant="fullWidth" className="p-divider" />
+                  <Divider variant='fullWidth' className='p-divider' />
                   {link === null ? (
-                    ""
+                    ''
                   ) : (
                     <Box mt={2}>
                       <Typography
-                        variant="h4"
-                        align="center"
+                        variant='h4'
+                        align='center'
                         paragraph
-                        className="details-text"
+                        className='details-text'
                       >
                         {isEnglish
-                          ? "Check the project live "
-                          : "Puedes revisar el proyecto "}
+                          ? 'Check the project live '
+                          : 'Puedes revisar el proyecto '}
                         <a
                           href={link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="details-link"
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='details-link'
                         >
-                          {isEnglish ? "here" : "aqui"}
+                          {isEnglish ? 'here' : 'aqui'}
                         </a>
                       </Typography>
                     </Box>
                   )}
                   {githubLink === null ? (
-                    ""
+                    ''
                   ) : (
                     <Box>
                       <Typography
-                        variant="h4"
-                        align="center"
+                        variant='h4'
+                        align='center'
                         paragraph
-                        className="details-text"
+                        className='details-text'
                       >
                         {isEnglish
-                          ? "You can check the repository of this project "
-                          : "Puedes revisar el repositorio de este proyecto "}
+                          ? 'You can check the repository of this project '
+                          : 'Puedes revisar el repositorio de este proyecto '}
                         <a
                           href={githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="details-link"
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='details-link'
                         >
-                          {isEnglish ? "here" : "aqui"}
+                          {isEnglish ? 'here' : 'aqui'}
                         </a>
                       </Typography>
                     </Box>
                   )}
-                  <Divider variant="fullWidth" className="p-divider" />
+                  <Divider variant='fullWidth' className='p-divider' />
                 </Box>
               </Grid>
             </Container>
