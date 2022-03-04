@@ -85,6 +85,9 @@ export default {
     devGame: 'Game Developer',
     illustrator: 'Illustrator',
     technologies: 'Technologies',
-    currently: 'Currently'
+    currently: 'Currently',
+    // Professional Works
+    // Description Project
+    asaiPreview: "Asai Gas is a project that its goal is to do automatic billing, faster and easier. From the Asai Gas's mobile app, get gas station bill instantly with artificial intelligence.",
   }
 }

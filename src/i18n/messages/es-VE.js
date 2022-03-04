@@ -85,6 +85,8 @@ export default {
     devGame: 'Desarrollador Juego',
     illustrator: 'Ilustrador',
     technologies: 'Tecnologías',
-    currently: 'Actualmente'
-  }
+    currently: 'Actualmente',
+    // Professional Works
+    asaiPreview: "Asai Gas es un proyecto que tiene como objetivo realizar la facturación automática, rápida y fácil.",
+  },
 }
