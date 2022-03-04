@@ -8,22 +8,22 @@ import {
   CardMedia,
   Divider,
   Grid,
-  Typography
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
-import React from "react";
-import { useSelector } from "react-redux";
-import { Link, withRouter } from "react-router-dom";
+  Typography,
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: 300,
-      height: "100%",
+      height: '100%',
     },
     maxWidth: 345,
-    height: "100%",
+    height: '100%',
   },
   media: {
     height: 250,
@@ -34,12 +34,14 @@ const Project = ({
   title,
   image,
   description,
+  previewMessage,
   developed,
   link,
   projectLink,
   video,
   imageDetail,
   githubLink,
+  typeProject,
 }) => {
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
@@ -49,8 +51,8 @@ const Project = ({
       <Grid item>
         <Box m={2} boxShadow={5}>
           <Card
-            className={clsx(classes.root, "project-content")}
-            style={{ height: "100%" }}
+            className={clsx(classes.root, 'project-content')}
+            style={{ height: '100%' }}
           >
             <CardActionArea>
               <Link
@@ -64,9 +66,10 @@ const Project = ({
                     imageDetail,
                     githubLink,
                     link,
+                    typeProject,
                   },
                 }}
-                className="project-link"
+                className='project-link'
               >
                 <CardMedia
                   className={classes.media}
@@ -76,18 +79,18 @@ const Project = ({
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant="h5"
-                    component="h2"
-                    className="project-title"
+                    variant='h5'
+                    component='h2'
+                    className='project-title'
                   >
                     {title}
                   </Typography>
-                  <Typography noWrap className="project-description">
-                    {description}
+                  <Typography noWrap className='project-description'>
+                    {typeProject === 'personal' ? description : previewMessage}
                   </Typography>
                 </CardContent>
               </Link>
-              <Divider className="project-divider" />
+              <Divider className='project-divider' />
             </CardActionArea>
             <CardActions>
               <Link
@@ -101,31 +104,34 @@ const Project = ({
                     imageDetail,
                     githubLink,
                     link,
+                    typeProject,
                   },
                 }}
-                className="project-link project-option"
+                className='project-link project-option'
               >
                 <Button
-                  size="small"
-                  color="primary"
-                  className="project-link project-option"
+                  size='small'
+                  color='primary'
+                  className='project-link project-option'
                 >
-                  {isEnglish ? "More Details" : "Mas Detalles"}
+                  {isEnglish ? 'More Details' : 'Mas Detalles'}
                 </Button>
               </Link>
               <a
                 href={link}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="project-link"
+                rel='noopener noreferrer'
+                target='_blank'
+                className='project-link'
               >
-                <Button
-                  size="small"
-                  color="primary"
-                  className="project-link project-option"
-                >
-                  {isEnglish ? "Check Project" : "Mira el Proyecto"}
-                </Button>
+                {typeProject === 'personal' && (
+                  <Button
+                    size='small'
+                    color='primary'
+                    className='project-link project-option'
+                  >
+                    {isEnglish ? 'Check Project' : 'Mira el Proyecto'}
+                  </Button>
+                )}
               </a>
             </CardActions>
           </Card>
