@@ -5,6 +5,10 @@ import {
   Divider,
   Grid,
   Typography,
+  Radio,
+  RadioGroup,
+  FormControl,
+  FormControlLabel,
 } from '@material-ui/core';
 import {
   createMuiTheme,
@@ -14,6 +18,7 @@ import {
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { projects } from '../../content/projects';
+import { workProjects } from '../../content/workProjects';
 import translate from '../../i18n/translate';
 import Illustrations from './Illustrations';
 import Pagination from './Pagination';
@@ -23,16 +28,29 @@ let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
 const Projects = () => {
+  const [typeProject, setTypeProject] = useState('personal');
+
   const [currentPage, setCurrentPage] = useState(1);
   const [projectPerPage] = useState(6);
 
   // Get Current Projects
   const indexOfLastPost = currentPage * projectPerPage;
   const indexofFirstPost = indexOfLastPost - projectPerPage;
-  const currentProjects = projects.slice(indexofFirstPost, indexOfLastPost);
+  const currentProjects =
+    typeProject === 'personal'
+      ? projects.slice(indexofFirstPost, indexOfLastPost)
+      : workProjects.slice(indexofFirstPost, indexOfLastPost);
 
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const typeProyectHandler = () => {
+    if (typeProject === 'personal') {
+      setTypeProject('professional');
+    } else {
+      setTypeProject('personal');
+    }
+  };
 
   return (
     <div
@@ -57,6 +75,44 @@ const Projects = () => {
                 {translate('projectTitle')}
               </Typography>
               <Divider variant='fullWidth' className='p-divider' />
+
+              {/* Personal or Professional radio button */}
+
+              <Grid
+                container
+                direction='column'
+                justify='center'
+                alignItems='center'
+              >
+                <Box marginTop={3} marginBottom={3}>
+                  <FormControl>
+                    <Typography align='center' className='about-text'>
+                      {translate('projectsType')}
+                    </Typography>
+
+                    <RadioGroup
+                      row
+                      name='controlled-radio-buttons-group'
+                      defaultValue={typeProject}
+                      value={typeProject}
+                      onChange={typeProyectHandler}
+                    >
+                      <FormControlLabel
+                        value='personal'
+                        control={<Radio className='personal-option' />}
+                        label={translate('personals')}
+                        className='about-text'
+                      />
+                      <FormControlLabel
+                        value='professional'
+                        control={<Radio className='professional-option' />}
+                        label={translate('professionals')}
+                        className='about-text'
+                      />
+                    </RadioGroup>
+                  </FormControl>
+                </Box>
+              </Grid>
             </Box>
 
             <Grid
@@ -67,18 +123,28 @@ const Projects = () => {
             >
               {currentProjects?.map((project) => {
                 return (
-                  <Project
-                    key={project.id}
-                    title={project.name}
-                    description={project?.description}
-                    developed={project.developed}
-                    image={project.image}
-                    link={project.link}
-                    projectLink={project.projectLink}
-                    video={project.video}
-                    imageDetail={project.imageDetail}
-                    githubLink={project.githubLink}
-                  />
+                  <>
+                    <div className='animate__animated animate__fadeIn'>
+                      <Project
+                        key={project.id}
+                        title={project.name}
+                        description={
+                          typeProject === 'professional'
+                            ? null
+                            : project?.description
+                        }
+                        previewMessage={project?.previewMessage}
+                        developed={project.developed}
+                        image={project.image}
+                        link={project.link}
+                        projectLink={project.projectLink}
+                        video={project.video}
+                        imageDetail={project.imageDetail}
+                        githubLink={project.githubLink}
+                        typeProject={typeProject}
+                      />
+                    </div>
+                  </>
                 );
               })}
             </Grid>
@@ -112,7 +178,11 @@ const Projects = () => {
                   <Pagination
                     currentPage={currentPage}
                     projectPerPage={projectPerPage}
-                    totalProjects={projects.length}
+                    totalProjects={
+                      typeProject === 'personal'
+                        ? projects.length
+                        : workProjects.length
+                    }
                     paginate={paginate}
                   />
                 </Grid>
