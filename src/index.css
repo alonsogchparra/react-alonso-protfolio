@@ -152,19 +152,19 @@ svg.dash-icon:hover {
 }
 
 .personal-option span.MuiIconButton-label,
-.profesional-option span.MuiIconButton-label {
+.professional-option span.MuiIconButton-label {
   color: var(--nav-bg);
 }
 
 .personal-option.MuiRadio-colorSecondary.Mui-checked,
-.profesional-option.MuiRadio-colorSecondary.Mui-checked {
+.professional-option.MuiRadio-colorSecondary.Mui-checked {
   color: var(--nav-bg);
 }
 
 .personal-option.MuiIconButton-colorSecondary:hover,
-.profesional-option.MuiIconButton-colorSecondary:hover,
+.professional-option.MuiIconButton-colorSecondary:hover,
 .personal-option.MuiRadio-colorSecondary.Mui-checked:hover,
-.profesional-option.MuiRadio-colorSecondary.Mui-checked:hover {
+.professional-option.MuiRadio-colorSecondary.Mui-checked:hover {
   background-color: var(--projects-radio-button-hover);
 }
 
