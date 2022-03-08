@@ -57,6 +57,10 @@ export default {
     // Project
     myWebsite: "Mi sitio Web",
     reactCounter: "Contador React",
+    description: 'Descripción',
+    workplace: 'Lugar de trabajo',
+    tools: 'Herramientas',
+    team: 'Equipo',
     // Project Description
     descAutocorrector: "Autocorrector (Tiny) es una aplicación web donde tú como usuario puedes agregar la palabra mal escrita y la palabra correcta. De esa manera, la aplicación en el área de texto una vez que escriba la palabra (mal escrita, como agregó anteriormente) cuando presione el botón de espacio, esto actualizará el contenido con la palabra correcta. Si desea agregar una palabra mal escrita y ya está agregada, la aplicación no le permitirá agregarla por ese motivo. También tendrás la lista de Correcciones para comprobar las palabras que tienes y puedes usar para hacer que el autocorrector funcione.",
     descMyWebsite: "Mi sitio web lo desarrollé con React.js y el principal proposito de para realizar esto, es para que todos vean que los proyectos que he realizado, bien sea de programación e ilustración, tambien espero mostrar los proyectos en donde he podido colaborar. Además de mostrar la información de los proyectos, compartiré el link para que puedan ver el proyecto en vivo y el repositorio para que puedan revisar como fue desarrollado. Espero seguir actualizando mi sitio web con más proyectos y tener la oportunidad de brindar apoyo en otros proyectos que me permitan conocer más personas y adquirir nuevas habilidades. También lo veo como una forma distinta para mostrar que estoy buscando nuevas oportunidades.",

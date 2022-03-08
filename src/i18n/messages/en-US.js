@@ -57,6 +57,10 @@ export default {
     // Project
     myWebsite: "My Website",
     reactCounter: "React Counter",
+    description: 'Description',
+    workplace: 'Workplace',
+    tools: 'Tools',
+    team: 'Team',
     // Project Description
     descAutocorrector: "Autocorrector (Tiny) is a web application where you as an user you can add the misspelled word and the right word. That way the application on the textarea once you write the word (misspelled, as you added previously) when you press the space button this will update the content with the right word. If you want to add a misspelled word and it is already added, the application won't let you add it for that reason. Also you will have the Correction's list to check the words you have and you can use to make the autocorrector works.",
     descMyWebsite: "I developed my website with React.js and the main purpose of doing this is so that everyone can see that the projects I have done, either programming and illustration, I also hope to show the projects where I have been able to collaborate. In addition to showing the information of the projects, I will share the link so that you can see the project live and the repository so that you can review how it was developed. I hope to keep updating my website with more projects and have the opportunity to provide support in other projects that allow me to meet more people and acquire new skills. I also see it as a different way to show that I am looking for new opportunities.",
