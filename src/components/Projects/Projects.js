@@ -126,22 +126,26 @@ const Projects = () => {
                   <>
                     <div className='animate__animated animate__fadeIn'>
                       <Project
-                        key={project.id}
-                        title={project.name}
+                        key={project?.id}
+                        title={project?.name}
                         description={
                           typeProject === 'professional'
                             ? null
                             : project?.description
                         }
                         previewMessage={project?.previewMessage}
-                        developed={project.developed}
-                        image={project.image}
-                        link={project.link}
-                        projectLink={project.projectLink}
-                        video={project.video}
-                        imageDetail={project.imageDetail}
-                        githubLink={project.githubLink}
+                        developed={project?.developed}
+                        image={project?.image}
+                        link={project?.link}
+                        projectLink={project?.projectLink}
+                        video={project?.video}
+                        imageDetail={project?.imageDetail}
+                        githubLink={project?.githubLink}
                         typeProject={typeProject}
+                        workplaceName={project?.workplaceName}
+                        workplaceLogo={project?.workplaceLogo}
+                        devTools={project?.devTools}
+                        teams={project?.teams}
                       />
                     </div>
                   </>

@@ -42,6 +42,10 @@ const Project = ({
   imageDetail,
   githubLink,
   typeProject,
+  workplaceName,
+  workplaceLogo,
+  devTools,
+  teams,
 }) => {
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
@@ -67,6 +71,10 @@ const Project = ({
                     githubLink,
                     link,
                     typeProject,
+                    workplaceName,
+                    workplaceLogo,
+                    devTools,
+                    teams,
                   },
                 }}
                 className='project-link'
@@ -105,6 +113,10 @@ const Project = ({
                     githubLink,
                     link,
                     typeProject,
+                    workplaceName,
+                    workplaceLogo,
+                    devTools,
+                    teams,
                   },
                 }}
                 className='project-link project-option'

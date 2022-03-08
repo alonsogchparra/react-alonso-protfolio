@@ -12,6 +12,10 @@ const ProjectDetails = ({ location }) => {
   const link = location?.aboutProps?.link;
   const githubLink = location?.aboutProps?.githubLink;
   const typeProject = location?.aboutProps?.typeProject;
+  const workplaceName = location?.aboutProps?.workplaceName;
+  const workplaceLogo = location?.aboutProps?.workplaceLogo;
+  const devtools = location?.aboutProps?.devTools;
+  const teams = location?.aboutProps?.teams;
 
   return (
     <>
@@ -28,7 +32,14 @@ const ProjectDetails = ({ location }) => {
           githubLink={githubLink}
         />
       ) : (
-        <ShowProjectProfessional title={title} imageDetail={imageDetail} />
+        <ShowProjectProfessional
+          title={title}
+          imageDetail={imageDetail}
+          workplaceName={workplaceName}
+          workplaceLogo={workplaceLogo}
+          devtools={devtools}
+          teams={teams}
+        />
       )}
     </>
   );
