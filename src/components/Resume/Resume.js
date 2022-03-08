@@ -163,34 +163,11 @@ const Resume = () => {
               className='animate__animated animate__fadeIn'
             >
               <Experience
-                imgLogo={RESUMEN.UAKAMI}
+                imgLogo={RESUMEN.ARKUSNEXUS}
                 logoSize={classes.medium}
-                place='Uakami Studios'
-                time='2016 - Jun 2017'
-                profession={true}
-              />
-
-              <Experience
-                imgLogo={RESUMEN.LIKINVENT}
-                logoSize={classes.medium}
-                place='Likinvent Studios'
-                time='2015 - 2017'
-                profession={false}
-              />
-
-              <Experience
-                imgLogo={RESUMEN.VASCAR}
-                logoSize={classes.medium}
-                place='Vascar Solutions'
-                time='Jul 2017 - Mar 2018'
-                profession={true}
-              />
-
-              <Experience
-                imgLogo={RESUMEN.GO_APPS}
-                logoSize={classes.medium}
-                place='Go Apps'
-                time='Nov 2018 - Mar 2019'
+                place='Arkusnexus'
+                time='Jul 2021 - '
+                currentJob={true}
                 profession={true}
               />
 
@@ -203,11 +180,34 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={RESUMEN.ARKUSNEXUS}
+                imgLogo={RESUMEN.GO_APPS}
                 logoSize={classes.medium}
-                place='Arkusnexus'
-                time='Jul 2021 - '
-                currentJob={true}
+                place='Go Apps'
+                time='Nov 2018 - Mar 2019'
+                profession={true}
+              />
+
+              <Experience
+                imgLogo={RESUMEN.VASCAR}
+                logoSize={classes.medium}
+                place='Vascar Solutions'
+                time='Jul 2017 - Mar 2018'
+                profession={true}
+              />
+
+              <Experience
+                imgLogo={RESUMEN.LIKINVENT}
+                logoSize={classes.medium}
+                place='Likinvent Studios'
+                time='2015 - 2017'
+                profession={false}
+              />
+
+              <Experience
+                imgLogo={RESUMEN.UAKAMI}
+                logoSize={classes.medium}
+                place='Uakami Studios'
+                time='2016 - Jun 2017'
                 profession={true}
               />
             </Grid>
