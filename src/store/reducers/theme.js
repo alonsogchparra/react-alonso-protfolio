@@ -118,7 +118,7 @@ const initState = {
       // Project
       'project-title': '#fafafa',
       'project-description': '#fafafa',
-      'project-content': '#a10000',
+      'project-content': '#560b00',
       'project-option': '#fafafa',
       'project-divider': '#ecb102',
       // Project Detatils
