@@ -30,3 +30,29 @@ export const DASHBOARD = {
   GITHUB: 'https://github.com/alonsogchparra',
   MAILT_TO: 'mailto:alonsogparra@gmail.com',
 };
+
+export const FLAGS = {
+  VENEZUELA:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/illustrations%2Fvenezuela_flag.png?alt=media&token=5d4618de-587d-4ac6-916f-a4f611006afb',
+  MEXICO:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/illustrations%2Fmexico_flag.png?alt=media&token=49476fc2-7496-4e47-89cd-1200e573ff1b',
+};
+
+export const PROFILE_TEAM = {
+  FERNANDA:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Ffernanda.png?alt=media&token=3a05c287-287c-4a76-a359-caf86b4ff24a',
+  CHALCHI:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Fchalchi.png?alt=media&token=1daa77d8-7a52-4718-9b74-b4d7fde7c3e6',
+  EMMA: 'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Femma.jpeg?alt=media&token=413ecbcb-963a-4529-9057-cf16ce4872d5',
+  RUBEN:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Fruben.jpeg?alt=media&token=4027ac3d-8980-43c1-9243-6785ead0e67b',
+  ELBA: 'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Felba.jpeg?alt=media&token=f91aa1d3-e8d3-4da6-8f5a-3035d449543a',
+  DIANA:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Fdiana.jpeg?alt=media&token=9f42563b-462d-41fb-9daf-62c690d2f955',
+  MICAELA:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Fmicaela.jpeg?alt=media&token=9483558c-3778-4410-bc5e-c1b818606f4b',
+  ZERMENO:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Fzermeno.png?alt=media&token=9dbdaaf7-f89b-4eb0-9cf6-35587cec727b',
+  ROSSANA:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/teams%2Fasai%2Frossana.jpeg?alt=media&token=4213c857-f7cf-4dcb-a534-ee773f1b80d7',
+};
