@@ -14,6 +14,7 @@ import {
   responsiveFontSizes,
 } from '@material-ui/core/styles';
 import { Description } from '@material-ui/icons';
+import clsx from 'clsx';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import translate from '../../i18n/translate';
@@ -59,7 +60,7 @@ const Resume = () => {
                 <Avatar
                   alt='Alonso Parra'
                   src={RESUMEN.PROFILE_PHOTO}
-                  className={classes.large}
+                  className={clsx(classes.large, 'workplace-logo')}
                 />
               </Box>
             </Grid>
@@ -113,7 +114,10 @@ const Resume = () => {
                   alignItems='center'
                   style={{ marginBottom: '10px' }}
                 >
-                  <Avatar src={RESUMEN.ULA} className={classes.large} />
+                  <Avatar
+                    src={RESUMEN.ULA}
+                    className={clsx(classes.large, 'workplace-logo')}
+                  />
                 </Grid>
                 <Typography
                   variant='h5'

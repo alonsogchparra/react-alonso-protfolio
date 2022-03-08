@@ -1,5 +1,6 @@
 import { Avatar, Box, Grid, Typography } from '@material-ui/core';
 import React from 'react';
+import clsx from 'clsx';
 import translate from '../../i18n/translate';
 
 const Experience = ({
@@ -13,8 +14,13 @@ const Experience = ({
   return (
     <>
       <Box m={2}>
-        <Grid container justify='center' alignItems='center'>
-          <Avatar src={imgLogo} className={logoSize} />
+        <Grid
+          container
+          justify='center'
+          alignItems='center'
+          style={{ marginBottom: '10px' }}
+        >
+          <Avatar src={imgLogo} className={clsx(logoSize, 'workplace-logo')} />
         </Grid>
         <Typography variant='h5' align='center' className='resume-college'>
           {place}
