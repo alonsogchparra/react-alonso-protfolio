@@ -12,8 +12,8 @@ export const RESUMEN = {
     'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Flikinvent.png?alt=media&token=fa1631f7-7efa-4828-a146-4adeef2363d7',
   VASCAR:
     'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fvascar.png?alt=media&token=68d748d8-1e7c-4eb6-825d-6ca8e53b3926',
-  GO_APPS:
-    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fgoapps.png?alt=media&token=d58d8d5c-9d10-4f22-9105-4186c9349924',
+  FIVERR:
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Ffiverr.png?alt=media&token=6f97e6c4-7f92-4c09-90a6-11b4b322de22',
   QARONI:
     'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/experiences%2Fqaroni.png?alt=media&token=00904a10-5524-4139-a4a7-74b0cfaa7949',
   ARKUSNEXUS:
