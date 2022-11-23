@@ -10,6 +10,7 @@ const Experience = ({
   time,
   profession,
   currentJob = false,
+  job = 'devFrontend'
 }) => {
   return (
     <>
@@ -35,7 +36,7 @@ const Experience = ({
         </Typography>
         {profession ? (
           <Typography variant='body1' align='center' className='resume-college'>
-            {translate('devFrontend')}
+            {translate(job)}
           </Typography>
         ) : (
           <Typography variant='body1' align='center' className='resume-college'>
