@@ -131,6 +131,13 @@ const Resume = () => {
                   align='center'
                   className='resume-college-time'
                 >
+                  {translate('systemEngineer')}
+                </Typography>
+                <Typography
+                  variant='body1'
+                  align='center'
+                  className='resume-college-time'
+                >
                   {translate('january')} 2008 - {translate('december')} 2015
                 </Typography>
               </Box>
@@ -166,8 +173,7 @@ const Resume = () => {
                 imgLogo={RESUMEN.ARKUSNEXUS}
                 logoSize={classes.medium}
                 place='Arkusnexus'
-                time='Jul 2021 - '
-                currentJob={true}
+                time='Jul 2021 - Oct 2022'
                 profession={true}
               />
 
@@ -180,11 +186,12 @@ const Resume = () => {
               />
 
               <Experience
-                imgLogo={RESUMEN.GO_APPS}
+                imgLogo={RESUMEN.FIVERR}
                 logoSize={classes.medium}
-                place='Go Apps'
-                time='Nov 2018 - Mar 2019'
+                place='Fiverr'
+                time='Mar 2018 - Oct 2020'
                 profession={true}
+                job='freelancer'
               />
 
               <Experience
