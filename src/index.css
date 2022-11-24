@@ -31,6 +31,14 @@ button.nb-items:focus {
   outline: none;
 }
 
+button#changeTheme:focus {
+  outline: none;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.nav-btn.MuiButton-colorInherit:focus {
+  outline: none;
+}
+
 /* Logo Navbar position left */
 svg#Layer_1 {
   margin-left: 0;
