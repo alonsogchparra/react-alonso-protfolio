@@ -44,11 +44,13 @@ const Projects = () => {
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  const typeProyectHandler = () => {
+  const typeProjectHandler = () => {
     if (typeProject === 'personal') {
       setTypeProject('professional');
+      paginate(1);
     } else {
       setTypeProject('personal');
+      paginate(1);
     }
   };
 
@@ -95,7 +97,7 @@ const Projects = () => {
                       name='controlled-radio-buttons-group'
                       defaultValue={typeProject}
                       value={typeProject}
-                      onChange={typeProyectHandler}
+                      onChange={typeProjectHandler}
                     >
                       <FormControlLabel
                         value='personal'
