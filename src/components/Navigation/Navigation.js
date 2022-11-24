@@ -8,27 +8,26 @@ import {
   List,
   ListItem,
   ListItemText,
-  Toolbar
-} from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import CloseIcon from "@material-ui/icons/Close";
-import MenuIcon from "@material-ui/icons/Menu";
-import clsx from "clsx";
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import translate from "../../i18n/translate";
-import * as actions from "../../store/actions";
-
+  Toolbar,
+} from '@material-ui/core';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from '@material-ui/icons/Menu';
+import clsx from 'clsx';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import translate from '../../i18n/translate';
+import * as actions from '../../store/actions';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    flexDirection: "row",
+    display: 'flex',
+    flexDirection: 'row',
   },
   drawer: {
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
     },
@@ -38,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up("sm")]: {
-      display: "none",
+    [theme.breakpoints.up('sm')]: {
+      display: 'none',
     },
   },
   toolbar: theme.mixins.toolbar,
@@ -50,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   closeMenuButton: {
-    marginRight: "auto",
+    marginRight: 'auto',
     marginLeft: 0,
   },
   icon: {
@@ -58,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     marginRight: 0,
-    marginLeft: "auto",
+    marginLeft: 'auto',
   },
 }));
 
@@ -108,36 +107,36 @@ const Navigation = () => {
   const drawer = (
     <div>
       <List>
-        <Link to="/" className="nav-side-item">
+        <Link to='/' className='nav-side-item'>
           <ListItem button>
-            <ListItemText primary={translate("home")} />
+            <ListItemText primary={translate('home')} />
           </ListItem>
         </Link>
-        <Link to="/about" className="nav-side-item">
+        <Link to='/about' className='nav-side-item'>
           <ListItem button>
-            <ListItemText primary={translate("about")} />
+            <ListItemText primary={translate('about')} />
           </ListItem>
         </Link>
-        <Link to="/projects" className="nav-side-item">
+        <Link to='/projects' className='nav-side-item'>
           <ListItem button>
-            <ListItemText primary={translate("project")} />
+            <ListItemText primary={translate('project')} />
           </ListItem>
         </Link>
-        <Link to="/resume" className="nav-side-item">
+        <Link to='/resume' className='nav-side-item'>
           <ListItem button>
-            <ListItemText primary={translate("resume")} />
+            <ListItemText primary={translate('resume')} />
           </ListItem>
         </Link>
         <ListItem button>
           <ListItemText
-            className="animate__animated animate__pulse animate__slow animate__infinite"
-            primary={translate("chooseYourVillage")}
+            className='animate__animated animate__pulse animate__slow animate__infinite'
+            primary={translate('chooseYourVillage')}
             onClick={() => effectsHandler()}
           />
         </ListItem>
         <ListItem button>
           <ListItemText
-            primary={isEnglish ? "Español" : "English"}
+            primary={isEnglish ? 'Español' : 'English'}
             onClick={() => dispatch(actions.changeLanguage())}
           />
         </ListItem>
@@ -148,12 +147,12 @@ const Navigation = () => {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="static" className={clsx(classes.appBar, "nav-bg")}>
+      <AppBar position='static' className={clsx(classes.appBar, 'nav-bg')}>
         <Toolbar>
           <IconButton
-            color="inherit"
-            aria-label="Open drawer"
-            edge="start"
+            color='inherit'
+            aria-label='Open drawer'
+            edge='start'
             onClick={handleDrawerToggle}
             className={classes.menuButton}
           >
@@ -161,46 +160,46 @@ const Navigation = () => {
           </IconButton>
           <Hidden xsDown>
             <div className={classes.icon}>
-              <IconButton edge="start" color="inherit" aria-label="menu">
-                <Link to="/">
-                  <img src={navImage} alt="" style={{ width: "40px" }} />
+              <IconButton edge='start' color='inherit' aria-label='menu'>
+                <Link to='/'>
+                  <img src={navImage} alt='' style={{ width: '40px' }} />
                 </Link>
               </IconButton>
             </div>
 
             <div className={classes.buttons}>
-              <Link to="/about" className="nav-items">
-                <Button className="nb-items" color="inherit">
-                  {translate("about")}
+              <Link to='/about' className='nav-items'>
+                <Button className='nb-items' color='inherit'>
+                  {translate('about')}
                 </Button>
               </Link>
-              <Link to="/projects" className="nav-items">
-                <Button className="nb-items" color="inherit">
-                  {translate("project")}
+              <Link to='/projects' className='nav-items'>
+                <Button className='nb-items' color='inherit'>
+                  {translate('project')}
                 </Button>
               </Link>
-              <Link to="/resume" className="nav-items">
-                <Button className="nb-items" color="inherit">
-                  {translate("resume")}
+              <Link to='/resume' className='nav-items'>
+                <Button className='nb-items' color='inherit'>
+                  {translate('resume')}
                 </Button>
               </Link>
               <Button
-                variant="outlined"
-                color="inherit"
-                style={{ margin: "0 10px" }}
+                variant='outlined'
+                color='inherit'
+                style={{ margin: '0 10px' }}
                 onClick={() => effectsHandler()}
-                className="nav-btn animate__animated animate__pulse animate__slow animate__infinite"
-                id="changeTheme"
+                className='nav-btn animate__animated animate__pulse animate__slow animate__infinite'
+                id='changeTheme'
               >
-                {translate("chooseYourVillage")}
+                {translate('chooseYourVillage')}
               </Button>
               <Button
-                variant="outlined"
-                color="inherit"
+                variant='outlined'
+                color='inherit'
                 onClick={() => dispatch(actions.changeLanguage())}
-                className="nav-btn"
+                className='nav-btn'
               >
-                {isEnglish ? "Español" : "English"}
+                {isEnglish ? 'Español' : 'English'}
               </Button>
             </div>
           </Hidden>
@@ -208,10 +207,10 @@ const Navigation = () => {
       </AppBar>
 
       <nav className={classes.drawer}>
-        <Hidden smUp implementation="css">
+        <Hidden smUp implementation='css'>
           <Drawer
-            variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
+            variant='temporary'
+            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{

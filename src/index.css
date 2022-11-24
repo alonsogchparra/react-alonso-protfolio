@@ -5,8 +5,8 @@ body {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -28,6 +28,14 @@ hr.p-divider {
 
 /* NavBar */
 button.nb-items:focus {
+  outline: none;
+}
+
+button#changeTheme:focus {
+  outline: none;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.nav-btn.MuiButton-colorInherit:focus {
   outline: none;
 }
 
@@ -147,6 +155,27 @@ svg.dash-icon:hover {
   color: var(--project-title);
 }
 
+.project-label-title {
+  text-align: center;
+}
+
+.personal-option span.MuiIconButton-label,
+.professional-option span.MuiIconButton-label {
+  color: var(--nav-bg);
+}
+
+.personal-option.MuiRadio-colorSecondary.Mui-checked,
+.professional-option.MuiRadio-colorSecondary.Mui-checked {
+  color: var(--nav-bg);
+}
+
+.personal-option.MuiIconButton-colorSecondary:hover,
+.professional-option.MuiIconButton-colorSecondary:hover,
+.personal-option.MuiRadio-colorSecondary.Mui-checked:hover,
+.professional-option.MuiRadio-colorSecondary.Mui-checked:hover {
+  background-color: var(--projects-radio-button-hover);
+}
+
 .project-link {
   text-decoration: none;
 }
@@ -232,4 +261,24 @@ svg path.cls-1 {
 .resume-college-time {
   transition: color 0.5s ease;
   color: var(--resume-college-time);
+}
+
+/* ShowProfessionalProjects */
+
+.workplace-logo {
+  outline: 5px solid var(--nav-bg);
+}
+
+.icon-color {
+  color: var(--nav-bg);
+}
+
+svg.links-icons {
+  fill: var(--nav-bg);
+}
+svg.links-icons-disabled {
+  fill: var(--nav-bg);
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
 }
