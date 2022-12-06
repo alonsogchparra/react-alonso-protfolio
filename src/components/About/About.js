@@ -4,17 +4,17 @@ import {
   CssBaseline,
   Divider,
   Grid,
-  Typography
-} from "@material-ui/core";
+  Typography,
+} from '@material-ui/core';
 import {
   createMuiTheme,
   MuiThemeProvider,
-  responsiveFontSizes
-} from "@material-ui/core/styles";
-import React from "react";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import translate from "../../i18n/translate";
+  responsiveFontSizes,
+} from '@material-ui/core/styles';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import translate from '../../i18n/translate';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -23,114 +23,112 @@ const About = () => {
   const coinImage = useSelector((state) => state.theme.coinImage);
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div style={{ marginTop: '30px' }}>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <Grid
             container
-            direction="column"
-            justify="center"
-            alignItems="center"
+            direction='column'
+            justify='center'
+            alignItems='center'
           >
-            <Box mb={2} width="100%">
-              <Typography variant="h3" align="center" className="about-title">
-                {translate("aboutMe")}
+            <Box mb={2} width='100%'>
+              <Typography variant='h3' align='center' className='about-title'>
+                {translate('aboutMe')}
               </Typography>
-              <Divider variant="fullWidth" className="p-divider" />
+              <Divider variant='fullWidth' className='p-divider' />
             </Box>
-            <Grid className="animate__animated animate__fadeIn">
-              <img src={coinImage} alt="element" style={{ width: "120px" }} />
+            <Grid className='animate__animated animate__fadeIn'>
+              <img src={coinImage} alt='element' style={{ width: '120px' }} />
             </Grid>
             <Box my={2}>
               <Typography
-                variant="subtitle2"
-                align="center"
-                className="about-text animate__animated animate__fadeIn"
+                variant='subtitle2'
+                align='center'
+                className='about-text animate__animated animate__fadeIn'
               >
-                {translate("aboutSub")}
+                {translate('aboutSub')}
               </Typography>
             </Box>
 
-            <Box paddingX={5} className="animate__animated animate__fadeIn">
-              <Typography align="left" className="about-text" paragraph>
-                {translate("aboutLineOne")} <strong>{translate("name")}</strong>
-                . {translate("aboutLineOneNext")}
+            <Box paddingX={5} className='animate__animated animate__fadeIn'>
+              <Typography align='left' className='about-text' paragraph>
+                {translate('aboutLineOne')} <strong>{translate('name')}</strong>
+                . {translate('aboutLineOneNext')}
               </Typography>
-              <Typography align="left" paragraph={true} className="about-text">
-                {translate("aboutLineTwo")}{" "}
-                <strong>{translate("college")}</strong>.{" "}
-                {translate("aboutLineTwoNext")}
+              <Typography align='left' paragraph={true} className='about-text'>
+                {translate('aboutLineTwo')}{' '}
+                <strong>{translate('college')}</strong>.{' '}
+                {translate('aboutLineTwoNext')}
               </Typography>
-              <Typography align="left" paragraph={true} className="about-text">
-                {translate("aboutLineThree")}{" "}
-                <strong>{translate("frontend")}</strong> {translate("and")}{" "}
-                <strong>{translate("illustration")}.</strong>{" "}
-                {translate("aboutLineThreeNext")}{" "}
+              <Typography align='left' paragraph={true} className='about-text'>
+                {translate('aboutLineThree')}{' '}
+                <strong>{translate('frontend')}</strong> {translate('and')}{' '}
+                <strong>{translate('illustration')}.</strong>{' '}
+                {translate('aboutLineThreeNext')}{' '}
                 <strong>
-                  <code className="about-code">{translate("javascript")}</code>
-                </strong>{" "}
-                {translate("aboutLineThreeNextOne")}{" "}
+                  <code className='about-code'>{translate('javascript')}</code>
+                </strong>{' '}
+                {translate('aboutLineThreeNextOne')}{' '}
                 <strong>
-                  <code className="about-code">{translate("react")}</code>
+                  <code className='about-code'>{translate('react')}</code>
                 </strong>
-                , {translate("with")}{" "}
+                , {translate('with')}{' '}
                 <strong>
-                  <code className="about-code">{translate("csharp")}</code>
-                </strong>{" "}
-                {translate("developing")}{" "}
+                  <code className='about-code'>{translate('csharp')}</code>
+                </strong>{' '}
+                {translate('developing')}{' '}
                 <strong>
-                  <code className="about-code">{translate("unity")}</code>
+                  <code className='about-code'>{translate('unity')}</code>
                 </strong>
-                . {translate("for")}{" "}
-                <strong>{translate("illustrations")}</strong>{" "}
-                {translate("work")}{" "}
+                . {translate('for')}{' '}
+                <strong>{translate('illustrations')}</strong>{' '}
+                {translate('work')}{' '}
                 <strong>
-                  <code className="about-code">{translate("ai")}</code>
+                  <code className='about-code'>{translate('ai')}</code>
                 </strong>
-                . {translate("aboutLineThreeNextTwo")}{" "}
+                . {translate('aboutLineThreeNextTwo')}{' '}
                 <strong>
-                  <code className="about-code">{translate("native")}</code>
-                </strong>{" "}
-                {translate("try")}{" "}
+                  <code className='about-code'>{translate('native')}</code>
+                </strong>{' '}
+                {translate('try')}{' '}
                 <strong>
-                  <code className="about-code">{translate('nextjs')}</code>
-                </strong>
-                {" "}
-                {translate('toKnowFramework')}{" "}
-                {translate("live")}{" "}
+                  <code className='about-code'>{translate('nextjs')}</code>
+                </strong>{' '}
+                {translate('toKnowFramework')} {translate('live')}{' '}
                 <strong>Venezuela</strong>.
               </Typography>
-              <Typography align="left" paragraph={true} className="about-text">
-                {translate("aboutLineFour")}
+              <Typography align='left' paragraph={true} className='about-text'>
+                {translate('aboutLineFour')}
               </Typography>
-              <Typography align="left" paragraph={true} className="about-text">
-                {translate("aboutLineFive")}{" "}
+              <Typography align='left' paragraph={true} className='about-text'>
+                {translate('aboutLineFive')}{' '}
                 <strong>
-                  <Link to="/projects" className="about-code">
-                    {translate("projects")}
+                  <Link to='/projects' className='about-code'>
+                    {translate('projects')}
                   </Link>
-                </strong>{" "}
-                {translate("aboutLineFiveOne")}
+                </strong>{' '}
+                {translate('aboutLineFiveOne')}
               </Typography>
             </Box>
-            <Box width="100%" className="animate__animated animate__fadeIn">
-              <Divider variant="fullWidth" className="p-divider" />
+            <Box width='100%' className='animate__animated animate__fadeIn'>
+              <Divider variant='fullWidth' className='p-divider' />
               <Box py={2}>
-                <Typography variant="h5" align="center" className="about-text">
-                  {translate("aboutLineSix")}
+                <Typography variant='h5' align='center' className='about-text'>
+                  {translate('aboutLineSix')}
                 </Typography>
-                <Typography align="center" className="about-text">
-                  {translate("aboutLineSeven")}{" "}
+                <Typography align='center' className='about-text'>
+                  {translate('aboutLineSeven')}{' '}
                   <strong>
-                    <Link to="/resume" className="about-code">
-                      {translate("here")}
+                    <Link to='/resume' className='about-code'>
+                      {translate('here')}
                     </Link>
                   </strong>
                   .
                 </Typography>
               </Box>
-              <Divider variant="fullWidth" className="p-divider" />
+              <Divider variant='fullWidth' className='p-divider' />
             </Box>
           </Grid>
         </Container>
