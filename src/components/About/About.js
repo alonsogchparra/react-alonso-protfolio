@@ -94,9 +94,11 @@ const About = () => {
                 </strong>{" "}
                 {translate("try")}{" "}
                 <strong>
-                  <code className="about-code">{translate("node")}</code>
-                </strong>{" "}
-                {translate("whyNot")}. {translate("live")}{" "}
+                  <code className="about-code">{translate('nextjs')}</code>
+                </strong>
+                {" "}
+                {translate('toKnowFramework')}{" "}
+                {translate("live")}{" "}
                 <strong>Venezuela</strong>.
               </Typography>
               <Typography align="left" paragraph={true} className="about-text">
