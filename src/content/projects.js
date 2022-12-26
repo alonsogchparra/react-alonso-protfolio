@@ -2,13 +2,39 @@ import translate from '../i18n/translate';
 
 export const projects = [
   {
+    name: 'React Tables',
+    description: translate('descCustomPagination'),
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Freact_table.png?alt=media&token=1375d126-dd6f-4d4e-b32b-71b33daaace6',
+    imageDetail:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Freact_table.png?alt=media&token=1375d126-dd6f-4d4e-b32b-71b33daaace6',
+    developed: [
+      'React.js (Vite)',
+      'MUI',
+      'Axios',
+      'React Query',
+      'Github(Pages)',
+    ],
+    link: 'https://alonsogchparra.github.io/react-vite-table-selection/',
+    projectLink: 'react_tables',
+    githubLink: 'https://github.com/alonsogchparra/react-vite-table-selection',
+    video: 'https://youtube.com/embed/TSD3KZMQFKc',
+    id: 14,
+  },
+  {
     name: 'Custom Pagination',
     description: translate('descCustomPagination'),
     image:
       'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fcustom_pagination.png?alt=media&token=83bf0f40-8bac-4c99-8313-cdf404a84900',
     imageDetail:
       'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fcustom_pagination.png?alt=media&token=83bf0f40-8bac-4c99-8313-cdf404a84900',
-    developed: ['React.js', 'MUI', 'Animate.css', 'React Code Blocks', 'Github(Pages)'],
+    developed: [
+      'React.js',
+      'MUI',
+      'Animate.css',
+      'React Code Blocks',
+      'Github(Pages)',
+    ],
     link: 'https://alonsogchparra.github.io/react-app-pagination/',
     projectLink: 'custom_pagination',
     githubLink: 'https://github.com/alonsogchparra/react-app-pagination',

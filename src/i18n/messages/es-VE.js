@@ -72,6 +72,8 @@ export default {
     tools: 'Herramientas',
     team: 'Equipo',
     // Project Description
+    descReactTables:
+      'React tables es un proyecto construido con React.js(Vite), para obtener la informacion de un API usé React Query y para la construccion de la tabla usé Material UI. El objetivo del proyecto es la interacción de ambas tablas para seleccionar el elmento de la primera tabla y esta seleccion aparecera en la segunda tabla, y si se elimina el contenido de la segunda tabla se deseleccionara de la primera tabla. La intencion del proyecto era ver una manera distinta de trabajar con React y ver como poder mantener y actualizar la informacion en ambas tablas.',
     descCustomPagination:
       'Custom Pagination te muestra dos formas en las puedes trabajar la paginación en un proyecto, la primera paginación es custom, porque tu como desarrollador trabajas la lógica de cómo mostrar la cantidad de páginas que tendrá la vista, lo que te permite usarlo en cualquier proyecto con cualquier herramienta de interfaz de usuario si esta no posee una paginación, la segunda aprovechando que se está usando MUI, entre sus elementos posee una paginación y el proceso para agregarlo es más directo que el anterior. Lo que busco aquí es mostrar cómo ambas cosas pueden ser diferentes pero trabajan en un mismo fin. Lo que ambas tienen en común es que se necesita un useState para agregarlo en el link y asi la paginacion se va actualizando acorde al número que muestra.',
     descReactJSONView:
