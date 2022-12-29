@@ -173,7 +173,7 @@ const Resume = () => {
                 imgLogo={RESUMEN.ARKUSNEXUS}
                 logoSize={classes.medium}
                 place='Arkusnexus'
-                time='Jul 2021 - Oct 2022'
+                time='Jul 2021 - Nov 2022'
                 profession={true}
               />
 
