@@ -2,6 +2,27 @@ import translate from '../i18n/translate';
 
 export const projects = [
   {
+    name: 'React Grocery Store',
+    description: translate('desReactGroceryStore'),
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2FReact%20Grocery%20Store.png?alt=media&token=fe877dcc-39b5-4fb9-8b7f-65e02e3de0d7',
+    imageDetail:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2FReact%20Grocery%20Store.png?alt=media&token=fe877dcc-39b5-4fb9-8b7f-65e02e3de0d7',
+    developed: [
+      'React.js',
+      'Redux Toolkit',
+      'Animate.css',
+      'Sass',
+      'React Router Dom',
+      'Github(Pages)',
+    ],
+    link: 'https://alonsogchparra.github.io/react-grocery-store/',
+    projectLink: 'react_grocery_store',
+    githubLink: 'https://github.com/alonsogchparra/react-grocery-store',
+    video: null,
+    id: 15,
+  },
+  {
     name: 'React Tables',
     description: translate('descCustomPagination'),
     image:
