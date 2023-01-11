@@ -72,6 +72,8 @@ export default {
     tools: 'Herramientas',
     team: 'Equipo',
     // Project Description
+    desReactGroceryStore:
+      'React Grocery Store es una aplicación que simula una tienda online. Entre los retos para este proyecto fue trabajar con redux toolkit para manejar los estados como la cantidad de los productos, lo que este agregado en el carrito, tener el total de lo que se ha agregado, como borrar el producto del carrito de compra y restaurar la cantidad cuando se regrese a la tienda. Otro reto fue cómo voy a manejar el cambio de temas para visualizar el light/dark theme para el proyecto. Para lograr esto tuve que trabajar en conjunto con Sass + redux toolkit + javascript. Considero un buen alcance sobre cómo pude usar flex y grids para evitar el media query. No digo que no sea necesario, pero si se tiene la oportunidad de no usarlo, hazlo. Lo que me gusto sobre el estilo del proyecto es ver cómo estas herramientas (grids y flex), ayudaron mucho en lo que visual se trata. Si necesitas un proyecto para practicar o adquirir nuevos conocimientos, este proyecto es bueno para dar ese primer paso.',
     descReactTables:
       'React tables es un proyecto construido con React.js(Vite), para obtener la informacion de un API usé React Query y para la construccion de la tabla usé Material UI. El objetivo del proyecto es la interacción de ambas tablas para seleccionar el elmento de la primera tabla y esta seleccion aparecera en la segunda tabla, y si se elimina el contenido de la segunda tabla se deseleccionara de la primera tabla. La intencion del proyecto era ver una manera distinta de trabajar con React y ver como poder mantener y actualizar la informacion en ambas tablas.',
     descCustomPagination:
