@@ -1,8 +1,8 @@
 export const RESUMEN = {
   CV_ENGLISH:
-    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2022_ENG.pdf?alt=media&token=c00a7489-002f-4aff-9727-2839800930fa',
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2023_ENG_compressed.pdf?alt=media&token=9cb3ea96-32b7-4285-80df-65632f1e30ec',
   CV_SPANISH:
-    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2022_ESP.pdf?alt=media&token=f8b5df09-d4ef-4cae-b0ce-4678c68b49b5',
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2023_ESP_compressed.pdf?alt=media&token=4b5ade18-976c-4fc6-b70f-7fde0cdc4f05',
   PROFILE_PHOTO:
     'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/profile%2Fprofile_alonso_2-min.png?alt=media&token=00aa4a9e-2292-4d3d-a809-fb669cfdab66',
   ULA: 'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/studies%2Fula_logo.png?alt=media&token=4bf603ec-da62-4084-8bfd-f02d9a3d989b',
@@ -22,9 +22,9 @@ export const RESUMEN = {
 
 export const DASHBOARD = {
   CV_ENGLISH:
-    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2022_ENG.pdf?alt=media&token=c00a7489-002f-4aff-9727-2839800930fa',
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2023_ENG_compressed.pdf?alt=media&token=9cb3ea96-32b7-4285-80df-65632f1e30ec',
   CV_SPANISH:
-    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2022_ESP.pdf?alt=media&token=f8b5df09-d4ef-4cae-b0ce-4678c68b49b5',
+    'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/curriculums%2Falonso_cv_2023_ESP_compressed.pdf?alt=media&token=4b5ade18-976c-4fc6-b70f-7fde0cdc4f05',
   LINKEDIN: 'https://www.linkedin.com/in/alonsogchparra/',
   TWITTER: 'https://twitter.com/alonsogchparra',
   GITHUB: 'https://github.com/alonsogchparra',
