@@ -2,17 +2,58 @@ import translate from '../i18n/translate';
 
 export const projects = [
   {
+    name: 'The GuitaReact (Remake)',
+    description: translate('descTheGuitaReact'),
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fthe_guitareact_medium.png?alt=media&token=37a8324a-5dbf-455e-bd3c-baf65134167c',
+    imageDetail:
+      'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fthe_guitareact_medium.png?alt=media&token=37a8324a-5dbf-455e-bd3c-baf65134167c',
+    developed: [
+      'Animate.css',
+      'Axios',
+      'Figma',
+      'Firebase',
+      'Firestore',
+      'Google-Fonts',
+      'Material UI',
+      'react-metronome-hook',
+      'React.js',
+      'Redux-Toolkit',
+      'SASS',
+    ],
+    link: 'https://theguitareact.web.app/dashboard',
+    projectLink: 'the_guitareact',
+    githubLink: 'https://github.com/alonsogchparra/theguitareact',
+    video: 'https://www.youtube.com/embed/GY4IcCHOMTs',
+    videosContainer: [
+      'https://www.youtube.com/embed/LxrnOVRsB4E',
+      'https://www.youtube.com/embed/GY4IcCHOMTs',
+      'https://www.youtube.com/embed/p_EfKKThyAc',
+      'https://www.youtube.com/embed/ry5TjP6maG8',
+    ],
+    designLink:
+      'https://www.figma.com/file/mXptUBuHx1zskha3Y0hmg9/GuitaReact?type=design&node-id=0%3A1&mode=design&t=GMF5wBK7OX2viKZ9-1',
+    id: 14,
+  },
+  {
     name: 'Custom Pagination',
     description: translate('descCustomPagination'),
     image:
       'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fcustom_pagination.png?alt=media&token=83bf0f40-8bac-4c99-8313-cdf404a84900',
     imageDetail:
       'https://firebasestorage.googleapis.com/v0/b/fir-react-upload-files.appspot.com/o/projects%2Fcustom_pagination.png?alt=media&token=83bf0f40-8bac-4c99-8313-cdf404a84900',
-    developed: ['React.js', 'MUI', 'Animate.css', 'React Code Blocks', 'Github(Pages)'],
+    developed: [
+      'React.js',
+      'MUI',
+      'Animate.css',
+      'React Code Blocks',
+      'Github(Pages)',
+    ],
     link: 'https://alonsogchparra.github.io/react-app-pagination/',
     projectLink: 'custom_pagination',
     githubLink: 'https://github.com/alonsogchparra/react-app-pagination',
     video: 'https://www.youtube.com/embed/VxwUwll3I80',
+    designLink: null,
     id: 13,
   },
   {
@@ -27,6 +68,7 @@ export const projects = [
     projectLink: 'json_view_modified',
     githubLink: 'https://github.com/alonsogchparra/react-json-view-modified',
     video: 'https://www.youtube.com/embed/y7SQP9aR9x4',
+    designLink: null,
     id: 12,
   },
   {
@@ -41,6 +83,7 @@ export const projects = [
     projectLink: 'autocorrector',
     githubLink: 'https://github.com/alonsogchparra/autocorrector-react',
     video: 'https://www.youtube.com/embed/b2_ZAxv3Wn0',
+    designLink: null,
     id: 11,
   },
   {
@@ -55,6 +98,7 @@ export const projects = [
     projectLink: 'my_website',
     githubLink: 'https://github.com/alonsogchparra/react-alonso-protfolio',
     video: 'https://www.youtube.com/embed/fdwEjqPFZks',
+    designLink: null,
     id: 10,
   },
   {
@@ -75,6 +119,11 @@ export const projects = [
     projectLink: 'guitareact',
     githubLink: 'https://github.com/alonsogchparra/guitareact',
     video: 'https://www.youtube.com/embed/I370AZCxWgk',
+    designLink: null,
+    videosContainer: [
+      'https://www.youtube.com/embed/I370AZCxWgk',
+      'https://www.youtube.com/embed/EOFnk-RXE6E'
+    ],
     id: 9,
   },
   {
@@ -95,6 +144,7 @@ export const projects = [
     projectLink: 'entre_grados',
     githubLink: 'https://github.com/alonsogchparra/react-entre-grados',
     video: 'https://www.youtube.com/embed/xvWx7gs6OEQ',
+    designLink: null,
     id: 8,
   },
   {
@@ -114,6 +164,7 @@ export const projects = [
     projectLink: 'crema_la_baraguena',
     githubLink: null,
     video: 'https://www.youtube.com/embed/tBfAzttYxDM',
+    designLink: null,
     id: 7,
   },
   {
@@ -128,6 +179,7 @@ export const projects = [
     projectLink: 'mario_bros_plans',
     githubLink: 'https://github.com/alonsogchparra/react-mario-bros-plans',
     video: null,
+    designLink: null,
     id: 6,
   },
   {
@@ -142,6 +194,7 @@ export const projects = [
     projectLink: 'react_lottie_bootstrap',
     githubLink: null,
     video: null,
+    designLink: null,
     id: 5,
   },
   {
@@ -156,6 +209,7 @@ export const projects = [
     projectLink: 'react_counter',
     githubLink: 'https://github.com/alonsogchparra/counter-react/tree/develop',
     video: null,
+    designLink: null,
     id: 4,
   },
   {
@@ -170,6 +224,7 @@ export const projects = [
     projectLink: 'ping_pong_what',
     githubLink: 'https://github.com/alonsogchparra/ping-pong-what',
     video: null,
+    designLink: null,
     id: 3,
   },
   {
@@ -184,6 +239,7 @@ export const projects = [
     projectLink: 'oki_and_doki',
     githubLink: 'https://github.com/alonsogchparra/OkiDoki',
     video: 'https://www.youtube.com/embed/fQ_I80zTxlk',
+    designLink: null,
     id: 2,
   },
   {
@@ -198,6 +254,7 @@ export const projects = [
     projectLink: 'vg_4_kids',
     githubLink: null,
     video: 'https://www.youtube.com/embed/TPR7YTQOPAk',
+    designLink: null,
     id: 1,
   },
 ];
