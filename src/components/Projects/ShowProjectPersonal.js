@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
   Box,
   Card,
@@ -13,9 +14,9 @@ import {
   MuiThemeProvider,
   responsiveFontSizes,
 } from '@material-ui/core/styles';
-import React from 'react';
 import { useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import { ShowOptionsVideos } from './ShowOptionsVideos';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -41,9 +42,13 @@ const ShowProjectPersonal = ({
   imageDetail,
   link,
   githubLink,
+  videosContainer,
+  designLink,
 }) => {
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
+
+  const [videoToShow, setVideoToShow] = useState(video);
 
   const checkVideo = (video, imageDetail) => {
     if (video === null) {
@@ -65,7 +70,7 @@ const ShowProjectPersonal = ({
             <Card className={classes.root}>
               <CardContent>
                 <iframe
-                  src={video}
+                  src={videoToShow}
                   frameBorder='0'
                   allow='autoplay; encrypted-media; fullscreen'
                   title='video'
@@ -130,16 +135,55 @@ const ShowProjectPersonal = ({
 
                 {checkVideo(video, imageDetail)}
 
+                {videosContainer && (
+                  <ShowOptionsVideos
+                    videosContainer={videosContainer}
+                    setVideoToShow={setVideoToShow}
+                  />
+                )}
+
                 <Box my={2}>
                   <Divider
                     variant='fullWidth'
                     className='p-divider'
                     style={{ marginTop: '10px', marginBottom: '15px' }}
                   />
-                  <Typography align='left' paragraph className='details-text'>
+                  <Typography
+                    align='left'
+                    paragraph
+                    className='details-text'
+                    style={{
+                      whiteSpace: 'pre-line',
+                      verticalAlign: 'bottom',
+                    }}
+                  >
                     {description}
                   </Typography>
                   <Divider variant='fullWidth' className='p-divider' />
+                  {designLink === null ? (
+                    ''
+                  ) : (
+                    <Box mt={2}>
+                      <Typography
+                        variant='h4'
+                        align='center'
+                        paragraph
+                        className='details-text'
+                      >
+                        {isEnglish
+                          ? 'Take a look the design of the project '
+                          : 'Mira el diseño del proyecto  '}
+                        <a
+                          href={designLink}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='details-link'
+                        >
+                          {isEnglish ? 'here' : 'aqui'}
+                        </a>
+                      </Typography>
+                    </Box>
+                  )}
                   {link === null ? (
                     ''
                   ) : (
