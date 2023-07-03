@@ -226,6 +226,20 @@ hr.project-divider {
   color: var(--details-link);
 }
 
+.MuiButton-outlined.btn-video-to-show.MuiButton-fullWidth {
+  border: 3px solid var(--nav-bg);
+}
+
+.MuiButton-outlined.btn-video-to-show.MuiButton-fullWidth .MuiButton-label {
+  color: var(--details-text);
+}
+
+@media screen and (max-width: 550px) {
+  .MuiGrid-root.video-to-show-buttons.MuiGrid-container {
+    flex-direction: column;
+  }
+}
+
 /* Resume */
 
 .resume-title {
