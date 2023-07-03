@@ -148,6 +148,8 @@ const Projects = () => {
                         workplaceLogo={project?.workplaceLogo}
                         devTools={project?.devTools}
                         teams={project?.teams}
+                        videosContainer={project?.videosContainer}
+                        designLink={project?.designLink}
                       />
                     </div>
                   </>

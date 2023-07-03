@@ -46,6 +46,8 @@ const Project = ({
   workplaceLogo,
   devTools,
   teams,
+  videosContainer,
+  designLink,
 }) => {
   const classes = useStyles();
   const isEnglish = useSelector((state) => state.translate.isEnglish);
@@ -75,6 +77,8 @@ const Project = ({
                     workplaceLogo,
                     devTools,
                     teams,
+                    videosContainer,
+                    designLink,
                   },
                 }}
                 className='project-link'
@@ -117,6 +121,7 @@ const Project = ({
                     workplaceLogo,
                     devTools,
                     teams,
+                    videosContainer,
                   },
                 }}
                 className='project-link project-option'

@@ -16,6 +16,8 @@ const ProjectDetails = ({ location }) => {
   const workplaceLogo = location?.aboutProps?.workplaceLogo;
   const devtools = location?.aboutProps?.devTools;
   const teams = location?.aboutProps?.teams;
+  const videosContainer = location?.aboutProps?.videosContainer;
+  const designLink = location?.aboutProps?.designLink;
 
   return (
     <>
@@ -30,6 +32,8 @@ const ProjectDetails = ({ location }) => {
           imageDetail={imageDetail}
           link={link}
           githubLink={githubLink}
+          videosContainer={videosContainer}
+          designLink={designLink}
         />
       ) : (
         <ShowProjectProfessional
